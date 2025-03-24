@@ -1,0 +1,24 @@
+name: "vulnerawise"
+version: "0.1.0"
+repository: github.com/vulnerawise/trivy-plugin-vulnerawise
+maintainer: yourname
+summary: Scan images and repositories, then send results to Vulnerawise API
+description: |-
+  A Trivy plugin that scans a repository, image, or SBOM (or Kubernetes resource via kubectl/oc)
+  and pipes the JSON output to vulnerawise audit.
+platforms:
+  - selector:
+      os: linux
+      arch: amd64
+    uri: ./trivy-vulnerawise
+    bin: ./trivy-vulnerawise
+  - selector:
+      os: darwin
+      arch: amd64
+    uri: ./trivy-vulnerawise
+    bin: ./trivy-vulnerawise
+  - selector:
+      os: darwin
+      arch: arm64
+    uri: ./trivy-vulnerawise
+    bin: ./trivy-vulnerawise
