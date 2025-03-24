@@ -10,15 +10,15 @@ platforms:
   - selector:
       os: linux
       arch: amd64
-    uri: ./trivy-vulnerawise
+    uri: https://github.com/vulnerawise/trivy-plugin-vulnerawise/releases/download/demo/trivy-vulnerawise.tar.gz 
     bin: ./trivy-vulnerawise
   - selector:
       os: darwin
       arch: amd64
-    uri: ./trivy-vulnerawise
+    uri: https://github.com/vulnerawise/trivy-plugin-vulnerawise/releases/download/demo/trivy-vulnerawise.tar.gz 
     bin: ./trivy-vulnerawise
   - selector:
       os: darwin
       arch: arm64
-    uri: ./trivy-vulnerawise
+    uri: https://github.com/vulnerawise/trivy-plugin-vulnerawise/releases/download/demo/trivy-vulnerawise.tar.gz 
     bin: ./trivy-vulnerawise
