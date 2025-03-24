@@ -104,7 +104,7 @@ kube_cmd() {
 if [ "$TYPE" = "kube" ]; then
   CMD=$(kube_cmd)
   images=$($CMD get "$RESOURCE_TYPE" "$RESOURCE_NAME" $KUBECTL_ARGS -o yaml | \
-           grep 'image:' | awk '{print $2}' | sort -u)
+           awk '/^[[:space:]]*-[[:space:]]*image:/{print $3}' | sort -u)
   if [ -z "$images" ]; then
     echo "No images found in $RESOURCE_TYPE/$RESOURCE_NAME"
     exit 1

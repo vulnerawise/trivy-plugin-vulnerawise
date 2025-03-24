@@ -1,0 +1,20 @@
+name: Release
+
+on:
+  push:
+    branch:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Compress
+        run: tar -zcvf trivy-vulnerawise.tar.gz trivy-vulnerawise
+      - name: Release
+        uses: softprops/action-gh-release@v1
+        with:
+          files: |
+            trivy-vulnerawise.tar.gz
