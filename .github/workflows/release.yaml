@@ -13,7 +13,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
       - name: Compress
-        run: tar -zcvf trivy-vulnerawise.tar.gz trivy-vulnerawise
+        run: tar -zcvf trivy-vulnerawise.tar.gz trivy-vulnerawise plugin.yaml
       - name: Release
         uses: softprops/action-gh-release@v1
         with:
