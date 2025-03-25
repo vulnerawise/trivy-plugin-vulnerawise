@@ -1,0 +1,92 @@
+{
+  "$schema": "https://raw.githubusercontent.com/oasis-tcs/sarif-spec/master/Schemata/sarif-schema-2.1.0.json",
+  "runs": [
+    {
+      "automationDetails": {
+        "id": "vulnerawise/scan/20250325192247"
+      },
+      "columnKind": "utf16CodeUnits",
+      "results": [
+        {
+          "fingerprints": {
+            "vulnerawiseFingerprint/v1": "org.apache.logging.log4j:log4j-core/2.14.1"
+          },
+          "kind": "fail",
+          "level": "error",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "src/gifttrack/pom.xml:lang-pkg/org.apache.logging.log4j:log4j-core",
+                  "uriBaseId": "%SRCROOT%"
+                },
+                "region": {
+                  "startLine": 1
+                }
+              }
+            }
+          ],
+          "message": {
+            "markdown": "# Component: `org.apache.logging.log4j:log4j-core`\n\n\t\t\t\t\t**Current version:** `2.14.1`\n\t\t\t\t\t\n\t\t\t\t\t## Recommendation\n\t\t\t\t\t\n\t\t\t\t\tUpdate to version `2.16.0, 2.12.2` or later\n\t\t\t\t\t\n\t\t\t\t\t---\n\t\t\t\t\t\n\t\t\t\t\t## Vulnerabilities (4)\n\t\t\t\t\t\n\t\t\t\t\t- **CVE-2021-45046** (fixed in version 2.16.0, 2.12.2)\n- **CVE-2021-44228** (fixed in version 2.15.0, 2.3.1, 2.12.2)\n- **CVE-2021-44832** (fixed in version 2.3.2, 2.12.4, 2.17.1)\n- **CVE-2021-45105** (fixed in version 2.12.3, 2.17.0, 2.3.1)\n",
+            "text": "Component org.apache.logging.log4j:log4j-core version 2.14.1 has 4 vulnerabilities. Update to version 2.16.0, 2.12.2 or later."
+          },
+          "properties": {
+            "component": "org.apache.logging.log4j:log4j-core",
+            "cve_ids": [
+              "CVE-2021-45046",
+              "CVE-2021-44228",
+              "CVE-2021-44832",
+              "CVE-2021-45105"
+            ],
+            "fix_version": "2.16.0, 2.12.2",
+            "github/alertType": "dependency",
+            "policies": [
+              "ssvc-immediate-policy",
+              "ssvc-scheduled-policy"
+            ],
+            "version": "2.14.1",
+            "vulnerabilities": 4
+          },
+          "ruleId": "vulnerable-component/org_apache_logging_log4j_log4j_core"
+        }
+      ],
+      "tool": {
+        "driver": {
+          "fullName": "Vulnerawise",
+          "informationUri": "https://github.com/vulnerawise/vulnerawise",
+          "name": "Vulnerawise",
+          "rules": [
+            {
+              "defaultConfiguration": {
+                "level": "error"
+              },
+              "fullDescription": {
+                "markdown": "## Vulnerable Component: org.apache.logging.log4j:log4j-core\n\nThis component has security vulnerabilities that require remediation.",
+                "text": "Component org.apache.logging.log4j:log4j-core has security vulnerabilities that require remediation"
+              },
+              "help": {
+                "markdown": "## Remediation\n\nUpdate component `org.apache.logging.log4j:log4j-core` from version `2.14.1` to the `2.16.0, 2.12.2` or latest secure version to resolve security vulnerabilities.",
+                "text": "Update component org.apache.logging.log4j:log4j-core to resolve security issues"
+              },
+              "id": "vulnerable-component/org_apache_logging_log4j_log4j_core",
+              "name": "Vulnerable Component: org.apache.logging.log4j:log4j-core",
+              "properties": {
+                "precision": "high",
+                "tags": [
+                  "security",
+                  "vulnerability",
+                  "component"
+                ]
+              },
+              "shortDescription": {
+                "text": "Security vulnerabilities in component org.apache.logging.log4j:log4j-core"
+              }
+            }
+          ],
+          "version": "1.0.0"
+        }
+      }
+    }
+  ],
+  "version": "2.1.0"
+}
