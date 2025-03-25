@@ -3,7 +3,7 @@
   "runs": [
     {
       "automationDetails": {
-        "id": "vulnerawise/scan/20250325192247"
+        "id": "vulnerawise/scan/20250325192609"
       },
       "columnKind": "utf16CodeUnits",
       "results": [
@@ -27,7 +27,7 @@
             }
           ],
           "message": {
-            "markdown": "# Component: `org.apache.logging.log4j:log4j-core`\n\n\t\t\t\t\t**Current version:** `2.14.1`\n\t\t\t\t\t\n\t\t\t\t\t## Recommendation\n\t\t\t\t\t\n\t\t\t\t\tUpdate to version `2.16.0, 2.12.2` or later\n\t\t\t\t\t\n\t\t\t\t\t---\n\t\t\t\t\t\n\t\t\t\t\t## Vulnerabilities (4)\n\t\t\t\t\t\n\t\t\t\t\t- **CVE-2021-45046** (fixed in version 2.16.0, 2.12.2)\n- **CVE-2021-44228** (fixed in version 2.15.0, 2.3.1, 2.12.2)\n- **CVE-2021-44832** (fixed in version 2.3.2, 2.12.4, 2.17.1)\n- **CVE-2021-45105** (fixed in version 2.12.3, 2.17.0, 2.3.1)\n",
+            "markdown": "# Component: `org.apache.logging.log4j:log4j-core` **Current version:** `2.14.1` ## Recommendation Update to version `2.16.0, 2.12.2` or later\n\n---\n\n## Vulnerabilities (4)\n\n- **CVE-2021-45046** (fixed in version 2.16.0, 2.12.2)\n- **CVE-2021-44228** (fixed in version 2.15.0, 2.3.1, 2.12.2)\n- **CVE-2021-45105** (fixed in version 2.12.3, 2.17.0, 2.3.1)\n- **CVE-2021-44832** (fixed in version 2.3.2, 2.12.4, 2.17.1)\n",
             "text": "Component org.apache.logging.log4j:log4j-core version 2.14.1 has 4 vulnerabilities. Update to version 2.16.0, 2.12.2 or later."
           },
           "properties": {
@@ -35,8 +35,8 @@
             "cve_ids": [
               "CVE-2021-45046",
               "CVE-2021-44228",
-              "CVE-2021-44832",
-              "CVE-2021-45105"
+              "CVE-2021-45105",
+              "CVE-2021-44832"
             ],
             "fix_version": "2.16.0, 2.12.2",
             "github/alertType": "dependency",
