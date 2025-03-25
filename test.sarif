@@ -3,13 +3,13 @@
   "runs": [
     {
       "automationDetails": {
-        "id": "vulnerawise/scan/20250325195640"
+        "id": "vulnerawise/scan/20250325201828"
       },
       "columnKind": "utf16CodeUnits",
       "results": [
         {
           "fingerprints": {
-            "vulnerawiseFingerprint/v1": "liblz4-1/0.0~r131-2ubuntu3"
+            "vulnerawiseFingerprint/v1": "libseccomp2/2.3.1-2.1ubuntu4"
           },
           "kind": "fail",
           "level": "warning",
@@ -17,7 +17,7 @@
             {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "os-pkg/liblz4-1",
+                  "uri": "os-pkg/libseccomp2",
                   "uriBaseId": "%SRCROOT%"
                 },
                 "region": {
@@ -27,27 +27,27 @@
             }
           ],
           "message": {
-            "markdown": "# Component: `liblz4-1`\n\n**Current version:** `0.0~r131-2ubuntu3`\n\n## Recommendation\nUpdate to version `0.0~r131-2ubuntu3.1` or later\n\n---\n\n## Vulnerabilities (1)\n\n- **CVE-2021-3520** (fixed in version 0.0~r131-2ubuntu3.1)\n",
-            "text": "Component liblz4-1 version 0.0~r131-2ubuntu3 has 1 vulnerabilities. Update to version 0.0~r131-2ubuntu3.1 or later."
+            "markdown": "# Component: `libseccomp2`\n\n**Current version:** `2.3.1-2.1ubuntu4`\n\n## Recommendation\nUpdate to version `2.4.1-0ubuntu0.18.04.2` or later\n\n---\n\n## Vulnerabilities (1)\n\n- **CVE-2019-9893** (fixed in version 2.4.1-0ubuntu0.18.04.2)\n",
+            "text": "Component libseccomp2 version 2.3.1-2.1ubuntu4 has 1 vulnerabilities. Update to version 2.4.1-0ubuntu0.18.04.2 or later."
           },
           "properties": {
-            "component": "liblz4-1",
+            "component": "libseccomp2",
             "cve_ids": [
-              "CVE-2021-3520"
+              "CVE-2019-9893"
             ],
-            "fix_version": "0.0~r131-2ubuntu3.1",
+            "fix_version": "2.4.1-0ubuntu0.18.04.2",
             "github/alertType": "dependency",
             "policies": [
               "ssvc-out-of-cycle-policy"
             ],
-            "version": "0.0~r131-2ubuntu3",
+            "version": "2.3.1-2.1ubuntu4",
             "vulnerabilities": 1
           },
-          "ruleId": "vulnerable-component/liblz4_1"
+          "ruleId": "vulnerable-component/libseccomp2"
         },
         {
           "fingerprints": {
-            "vulnerawiseFingerprint/v1": "libpcre3/2:8.39-9"
+            "vulnerawiseFingerprint/v1": "gzip/1.6-5ubuntu1"
           },
           "kind": "fail",
           "level": "warning",
@@ -55,7 +55,7 @@
             {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "os-pkg/libpcre3",
+                  "uri": "os-pkg/gzip",
                   "uriBaseId": "%SRCROOT%"
                 },
                 "region": {
@@ -65,28 +65,27 @@
             }
           ],
           "message": {
-            "markdown": "# Component: `libpcre3`\n\n**Current version:** `2:8.39-9`\n\n## Recommendation\nUpdate to version `2:8.39-9ubuntu0.1` or later\n\n---\n\n## Vulnerabilities (2)\n\n- **CVE-2020-14155** (fixed in version 2:8.39-9ubuntu0.1)\n- **CVE-2019-20838** (fixed in version 2:8.39-9ubuntu0.1)\n",
-            "text": "Component libpcre3 version 2:8.39-9 has 2 vulnerabilities. Update to version 2:8.39-9ubuntu0.1 or later."
+            "markdown": "# Component: `gzip`\n\n**Current version:** `1.6-5ubuntu1`\n\n## Recommendation\nUpdate to version `1.6-5ubuntu1.2` or later\n\n---\n\n## Vulnerabilities (1)\n\n- **CVE-2022-1271** (fixed in version 1.6-5ubuntu1.2)\n",
+            "text": "Component gzip version 1.6-5ubuntu1 has 1 vulnerabilities. Update to version 1.6-5ubuntu1.2 or later."
           },
           "properties": {
-            "component": "libpcre3",
+            "component": "gzip",
             "cve_ids": [
-              "CVE-2020-14155",
-              "CVE-2019-20838"
+              "CVE-2022-1271"
             ],
-            "fix_version": "2:8.39-9ubuntu0.1",
+            "fix_version": "1.6-5ubuntu1.2",
             "github/alertType": "dependency",
             "policies": [
-              "ssvc-out-of-cycle-policy"
+              "ssvc-scheduled-policy"
             ],
-            "version": "2:8.39-9",
-            "vulnerabilities": 2
+            "version": "1.6-5ubuntu1",
+            "vulnerabilities": 1
           },
-          "ruleId": "vulnerable-component/libpcre3"
+          "ruleId": "vulnerable-component/gzip"
         },
         {
           "fingerprints": {
-            "vulnerawiseFingerprint/v1": "libsasl2-2/2.1.27~101-g0780600+dfsg-3ubuntu2"
+            "vulnerawiseFingerprint/v1": "e2fsprogs/1.44.1-1ubuntu1.1"
           },
           "kind": "fail",
           "level": "warning",
@@ -94,7 +93,7 @@
             {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "os-pkg/libsasl2-2",
+                  "uri": "os-pkg/e2fsprogs",
                   "uriBaseId": "%SRCROOT%"
                 },
                 "region": {
@@ -104,37 +103,119 @@
             }
           ],
           "message": {
-            "markdown": "# Component: `libsasl2-2`\n\n**Current version:** `2.1.27~101-g0780600+dfsg-3ubuntu2`\n\n## Recommendation\nUpdate to version `2.1.27~101-g0780600+dfsg-3ubuntu2.4` or later\n\n---\n\n## Vulnerabilities (2)\n\n- **CVE-2019-19906** (fixed in version 2.1.27~101-g0780600+dfsg-3ubuntu2.1)\n- **CVE-2022-24407** (fixed in version 2.1.27~101-g0780600+dfsg-3ubuntu2.4)\n",
-            "text": "Component libsasl2-2 version 2.1.27~101-g0780600+dfsg-3ubuntu2 has 2 vulnerabilities. Update to version 2.1.27~101-g0780600+dfsg-3ubuntu2.4 or later."
+            "markdown": "# Component: `e2fsprogs`\n\n**Current version:** `1.44.1-1ubuntu1.1`\n\n## Recommendation\nUpdate to version `1.44.1-1ubuntu1.4` or later\n\n---\n\n## Vulnerabilities (3)\n\n- **CVE-2022-1304** (fixed in version 1.44.1-1ubuntu1.4)\n- **CVE-2019-5188** (fixed in version 1.44.1-1ubuntu1.3)\n- **CVE-2019-5094** (fixed in version 1.44.1-1ubuntu1.2)\n",
+            "text": "Component e2fsprogs version 1.44.1-1ubuntu1.1 has 3 vulnerabilities. Update to version 1.44.1-1ubuntu1.4 or later."
           },
           "properties": {
-            "component": "libsasl2-2",
+            "component": "e2fsprogs",
             "cve_ids": [
-              "CVE-2019-19906",
-              "CVE-2022-24407"
+              "CVE-2022-1304",
+              "CVE-2019-5188",
+              "CVE-2019-5094"
             ],
-            "fix_version": "2.1.27~101-g0780600+dfsg-3ubuntu2.4",
+            "fix_version": "1.44.1-1ubuntu1.4",
+            "github/alertType": "dependency",
+            "policies": [
+              "ssvc-scheduled-policy"
+            ],
+            "version": "1.44.1-1ubuntu1.1",
+            "vulnerabilities": 3
+          },
+          "ruleId": "vulnerable-component/e2fsprogs"
+        },
+        {
+          "fingerprints": {
+            "vulnerawiseFingerprint/v1": "libsepol1/2.7-1"
+          },
+          "kind": "fail",
+          "level": "warning",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "os-pkg/libsepol1",
+                  "uriBaseId": "%SRCROOT%"
+                },
+                "region": {
+                  "startLine": 1
+                }
+              }
+            }
+          ],
+          "message": {
+            "markdown": "# Component: `libsepol1`\n\n**Current version:** `2.7-1`\n\n## Recommendation\nUpdate to version `2.7-1ubuntu0.1` or later\n\n---\n\n## Vulnerabilities (4)\n\n- **CVE-2021-36086** (fixed in version 2.7-1ubuntu0.1)\n- **CVE-2021-36084** (fixed in version 2.7-1ubuntu0.1)\n- **CVE-2021-36087** (fixed in version 2.7-1ubuntu0.1)\n- **CVE-2021-36085** (fixed in version 2.7-1ubuntu0.1)\n",
+            "text": "Component libsepol1 version 2.7-1 has 4 vulnerabilities. Update to version 2.7-1ubuntu0.1 or later."
+          },
+          "properties": {
+            "component": "libsepol1",
+            "cve_ids": [
+              "CVE-2021-36086",
+              "CVE-2021-36084",
+              "CVE-2021-36087",
+              "CVE-2021-36085"
+            ],
+            "fix_version": "2.7-1ubuntu0.1",
+            "github/alertType": "dependency",
+            "policies": [
+              "ssvc-scheduled-policy"
+            ],
+            "version": "2.7-1",
+            "vulnerabilities": 4
+          },
+          "ruleId": "vulnerable-component/libsepol1"
+        },
+        {
+          "fingerprints": {
+            "vulnerawiseFingerprint/v1": "libgcrypt20/1.8.1-4ubuntu1.1"
+          },
+          "kind": "fail",
+          "level": "warning",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "os-pkg/libgcrypt20",
+                  "uriBaseId": "%SRCROOT%"
+                },
+                "region": {
+                  "startLine": 1
+                }
+              }
+            }
+          ],
+          "message": {
+            "markdown": "# Component: `libgcrypt20`\n\n**Current version:** `1.8.1-4ubuntu1.1`\n\n## Recommendation\nUpdate to version `1.8.1-4ubuntu1.3` or later\n\n---\n\n## Vulnerabilities (3)\n\n- **CVE-2021-33560** (fixed in version 1.8.1-4ubuntu1.3)\n- **CVE-2021-40528** (fixed in version 1.8.1-4ubuntu1.3)\n- **CVE-2019-13627** (fixed in version 1.8.1-4ubuntu1.2)\n",
+            "text": "Component libgcrypt20 version 1.8.1-4ubuntu1.1 has 3 vulnerabilities. Update to version 1.8.1-4ubuntu1.3 or later."
+          },
+          "properties": {
+            "component": "libgcrypt20",
+            "cve_ids": [
+              "CVE-2021-33560",
+              "CVE-2021-40528",
+              "CVE-2019-13627"
+            ],
+            "fix_version": "1.8.1-4ubuntu1.3",
             "github/alertType": "dependency",
             "policies": [
               "ssvc-out-of-cycle-policy",
               "ssvc-scheduled-policy"
             ],
-            "version": "2.1.27~101-g0780600+dfsg-3ubuntu2",
-            "vulnerabilities": 2
+            "version": "1.8.1-4ubuntu1.1",
+            "vulnerabilities": 3
           },
-          "ruleId": "vulnerable-component/libsasl2_2"
+          "ruleId": "vulnerable-component/libgcrypt20"
         },
         {
           "fingerprints": {
-            "vulnerawiseFingerprint/v1": "login/1:4.5-1ubuntu1"
+            "vulnerawiseFingerprint/v1": "org.apache.logging.log4j:log4j-core/2.14.1"
           },
           "kind": "fail",
-          "level": "warning",
+          "level": "error",
           "locations": [
             {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "os-pkg/login",
+                  "uri": "deployments/gateway-1.0-jar-with-dependencies.jar",
                   "uriBaseId": "%SRCROOT%"
                 },
                 "region": {
@@ -144,23 +225,169 @@
             }
           ],
           "message": {
-            "markdown": "# Component: `login`\n\n**Current version:** `1:4.5-1ubuntu1`\n\n## Recommendation\nUpdate to version `1:4.5-1ubuntu2.2` or later\n\n---\n\n## Vulnerabilities (1)\n\n- **CVE-2018-7169** (fixed in version 1:4.5-1ubuntu2.2)\n",
-            "text": "Component login version 1:4.5-1ubuntu1 has 1 vulnerabilities. Update to version 1:4.5-1ubuntu2.2 or later."
+            "markdown": "# Component: `org.apache.logging.log4j:log4j-core`\n\n**Current version:** `2.14.1`\n\n## Recommendation\nUpdate to version `2.17.1` or later\n\n---\n\n## Vulnerabilities (4)\n\n- **CVE-2021-45046** (fixed in version 2.16.0, 2.12.2)\n- **CVE-2021-44228** (fixed in version 2.15.0, 2.3.1, 2.12.2)\n- **CVE-2021-44832** (fixed in version 2.3.2, 2.12.4, 2.17.1)\n- **CVE-2021-45105** (fixed in version 2.12.3, 2.17.0, 2.3.1)\n",
+            "text": "Component org.apache.logging.log4j:log4j-core version 2.14.1 has 4 vulnerabilities. Update to version 2.17.1 or later."
           },
           "properties": {
-            "component": "login",
+            "component": "org.apache.logging.log4j:log4j-core",
             "cve_ids": [
-              "CVE-2018-7169"
+              "CVE-2021-45046",
+              "CVE-2021-44228",
+              "CVE-2021-44832",
+              "CVE-2021-45105"
             ],
-            "fix_version": "1:4.5-1ubuntu2.2",
+            "fix_version": "2.17.1",
+            "github/alertType": "dependency",
+            "policies": [
+              "ssvc-immediate-policy",
+              "ssvc-scheduled-policy"
+            ],
+            "version": "2.14.1",
+            "vulnerabilities": 4
+          },
+          "ruleId": "vulnerable-component/org_apache_logging_log4j_log4j_core"
+        },
+        {
+          "fingerprints": {
+            "vulnerawiseFingerprint/v1": "libasn1-8-heimdal/7.5.0+dfsg-1"
+          },
+          "kind": "fail",
+          "level": "warning",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "os-pkg/libasn1-8-heimdal",
+                  "uriBaseId": "%SRCROOT%"
+                },
+                "region": {
+                  "startLine": 1
+                }
+              }
+            }
+          ],
+          "message": {
+            "markdown": "# Component: `libasn1-8-heimdal`\n\n**Current version:** `7.5.0+dfsg-1`\n\n## Recommendation\nUpdate to version `7.5.0+dfsg-1ubuntu0.1` or later\n\n---\n\n## Vulnerabilities (10)\n\n- **CVE-2022-3116** (fixed in version 7.5.0+dfsg-1ubuntu0.1)\n- **CVE-2022-45142** (fixed in version 7.5.0+dfsg-1ubuntu0.4)\n- **CVE-2021-44758** (fixed in version 7.5.0+dfsg-1ubuntu0.3)\n- **CVE-2022-44640** (fixed in version 7.5.0+dfsg-1ubuntu0.3)\n- **CVE-2022-41916** (fixed in version 7.5.0+dfsg-1ubuntu0.2)\n- **CVE-2022-3437** (fixed in version 7.5.0+dfsg-1ubuntu0.3)\n- **CVE-2022-42898** (fixed in version 7.5.0+dfsg-1ubuntu0.3)\n- **CVE-2021-3671** (fixed in version 7.5.0+dfsg-1ubuntu0.1)\n- **CVE-2018-16860** (fixed in version 7.5.0+dfsg-1ubuntu0.1)\n- **CVE-2019-12098** (fixed in version 7.5.0+dfsg-1ubuntu0.1)\n",
+            "text": "Component libasn1-8-heimdal version 7.5.0+dfsg-1 has 10 vulnerabilities. Update to version 7.5.0+dfsg-1ubuntu0.1 or later."
+          },
+          "properties": {
+            "component": "libasn1-8-heimdal",
+            "cve_ids": [
+              "CVE-2022-3116",
+              "CVE-2022-45142",
+              "CVE-2021-44758",
+              "CVE-2022-44640",
+              "CVE-2022-41916",
+              "CVE-2022-3437",
+              "CVE-2022-42898",
+              "CVE-2021-3671",
+              "CVE-2018-16860",
+              "CVE-2019-12098"
+            ],
+            "fix_version": "7.5.0+dfsg-1ubuntu0.1",
+            "github/alertType": "dependency",
+            "policies": [
+              "ssvc-out-of-cycle-policy",
+              "ssvc-scheduled-policy"
+            ],
+            "version": "7.5.0+dfsg-1",
+            "vulnerabilities": 10
+          },
+          "ruleId": "vulnerable-component/libasn1_8_heimdal"
+        },
+        {
+          "fingerprints": {
+            "vulnerawiseFingerprint/v1": "libldap-2.4-2/2.4.45+dfsg-1ubuntu1.1"
+          },
+          "kind": "fail",
+          "level": "warning",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "os-pkg/libldap-2.4-2",
+                  "uriBaseId": "%SRCROOT%"
+                },
+                "region": {
+                  "startLine": 1
+                }
+              }
+            }
+          ],
+          "message": {
+            "markdown": "# Component: `libldap-2.4-2`\n\n**Current version:** `2.4.45+dfsg-1ubuntu1.1`\n\n## Recommendation\nUpdate to version `2.4.45+dfsg-1ubuntu1.11` or later\n\n---\n\n## Vulnerabilities (18)\n\n- **CVE-2022-29155** (fixed in version 2.4.45+dfsg-1ubuntu1.11)\n- **CVE-2020-25709** (fixed in version 2.4.45+dfsg-1ubuntu1.8)\n- **CVE-2020-25710** (fixed in version 2.4.45+dfsg-1ubuntu1.8)\n- **CVE-2020-36230** (fixed in version 2.4.45+dfsg-1ubuntu1.9)\n- **CVE-2020-36229** (fixed in version 2.4.45+dfsg-1ubuntu1.9)\n- **CVE-2020-36228** (fixed in version 2.4.45+dfsg-1ubuntu1.9)\n- **CVE-2020-36226** (fixed in version 2.4.45+dfsg-1ubuntu1.9)\n- **CVE-2020-36225** (fixed in version 2.4.45+dfsg-1ubuntu1.9)\n- **CVE-2020-36227** (fixed in version 2.4.45+dfsg-1ubuntu1.9)\n- **CVE-2020-36223** (fixed in version 2.4.45+dfsg-1ubuntu1.9)\n- **CVE-2020-36222** (fixed in version 2.4.45+dfsg-1ubuntu1.9)\n- **CVE-2020-36221** (fixed in version 2.4.45+dfsg-1ubuntu1.9)\n- **CVE-2020-36224** (fixed in version 2.4.45+dfsg-1ubuntu1.9)\n- **CVE-2020-25692** (fixed in version 2.4.45+dfsg-1ubuntu1.7)\n- **CVE-2021-27212** (fixed in version 2.4.45+dfsg-1ubuntu1.10)\n- **CVE-2020-12243** (fixed in version 2.4.45+dfsg-1ubuntu1.5)\n- **CVE-2019-13565** (fixed in version 2.4.45+dfsg-1ubuntu1.3)\n- **CVE-2019-13057** (fixed in version 2.4.45+dfsg-1ubuntu1.3)\n",
+            "text": "Component libldap-2.4-2 version 2.4.45+dfsg-1ubuntu1.1 has 18 vulnerabilities. Update to version 2.4.45+dfsg-1ubuntu1.11 or later."
+          },
+          "properties": {
+            "component": "libldap-2.4-2",
+            "cve_ids": [
+              "CVE-2022-29155",
+              "CVE-2020-25709",
+              "CVE-2020-25710",
+              "CVE-2020-36230",
+              "CVE-2020-36229",
+              "CVE-2020-36228",
+              "CVE-2020-36226",
+              "CVE-2020-36225",
+              "CVE-2020-36227",
+              "CVE-2020-36223",
+              "CVE-2020-36222",
+              "CVE-2020-36221",
+              "CVE-2020-36224",
+              "CVE-2020-25692",
+              "CVE-2021-27212",
+              "CVE-2020-12243",
+              "CVE-2019-13565",
+              "CVE-2019-13057"
+            ],
+            "fix_version": "2.4.45+dfsg-1ubuntu1.11",
+            "github/alertType": "dependency",
+            "policies": [
+              "ssvc-out-of-cycle-policy",
+              "ssvc-scheduled-policy"
+            ],
+            "version": "2.4.45+dfsg-1ubuntu1.1",
+            "vulnerabilities": 18
+          },
+          "ruleId": "vulnerable-component/libldap_2_4_2"
+        },
+        {
+          "fingerprints": {
+            "vulnerawiseFingerprint/v1": "libgmp10/2:6.1.2+dfsg-2"
+          },
+          "kind": "fail",
+          "level": "warning",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "os-pkg/libgmp10",
+                  "uriBaseId": "%SRCROOT%"
+                },
+                "region": {
+                  "startLine": 1
+                }
+              }
+            }
+          ],
+          "message": {
+            "markdown": "# Component: `libgmp10`\n\n**Current version:** `2:6.1.2+dfsg-2`\n\n## Recommendation\nUpdate to version `2:6.1.2+dfsg-2ubuntu0.1` or later\n\n---\n\n## Vulnerabilities (1)\n\n- **CVE-2021-43618** (fixed in version 2:6.1.2+dfsg-2ubuntu0.1)\n",
+            "text": "Component libgmp10 version 2:6.1.2+dfsg-2 has 1 vulnerabilities. Update to version 2:6.1.2+dfsg-2ubuntu0.1 or later."
+          },
+          "properties": {
+            "component": "libgmp10",
+            "cve_ids": [
+              "CVE-2021-43618"
+            ],
+            "fix_version": "2:6.1.2+dfsg-2ubuntu0.1",
             "github/alertType": "dependency",
             "policies": [
               "ssvc-out-of-cycle-policy"
             ],
-            "version": "1:4.5-1ubuntu1",
+            "version": "2:6.1.2+dfsg-2",
             "vulnerabilities": 1
           },
-          "ruleId": "vulnerable-component/login"
+          "ruleId": "vulnerable-component/libgmp10"
         },
         {
           "fingerprints": {
@@ -204,7 +431,7 @@
         },
         {
           "fingerprints": {
-            "vulnerawiseFingerprint/v1": "libgmp10/2:6.1.2+dfsg-2"
+            "vulnerawiseFingerprint/v1": "curl/7.58.0-2ubuntu3.6"
           },
           "kind": "fail",
           "level": "warning",
@@ -212,7 +439,7 @@
             {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "os-pkg/libgmp10",
+                  "uri": "os-pkg/curl",
                   "uriBaseId": "%SRCROOT%"
                 },
                 "region": {
@@ -222,64 +449,130 @@
             }
           ],
           "message": {
-            "markdown": "# Component: `libgmp10`\n\n**Current version:** `2:6.1.2+dfsg-2`\n\n## Recommendation\nUpdate to version `2:6.1.2+dfsg-2ubuntu0.1` or later\n\n---\n\n## Vulnerabilities (1)\n\n- **CVE-2021-43618** (fixed in version 2:6.1.2+dfsg-2ubuntu0.1)\n",
-            "text": "Component libgmp10 version 2:6.1.2+dfsg-2 has 1 vulnerabilities. Update to version 2:6.1.2+dfsg-2ubuntu0.1 or later."
+            "markdown": "# Component: `curl`\n\n**Current version:** `7.58.0-2ubuntu3.6`\n\n## Recommendation\nUpdate to version `7.58.0-2ubuntu3.24` or later\n\n---\n\n## Vulnerabilities (30)\n\n- **CVE-2022-32221** (fixed in version 7.58.0-2ubuntu3.21)\n- **CVE-2022-27782** (fixed in version 7.58.0-2ubuntu3.18)\n- **CVE-2022-27781** (fixed in version 7.58.0-2ubuntu3.18)\n- **CVE-2021-22946** (fixed in version 7.58.0-2ubuntu3.15)\n- **CVE-2021-22925** (fixed in version 7.58.0-2ubuntu3.14)\n- **CVE-2021-22876** (fixed in version 7.58.0-2ubuntu3.13)\n- **CVE-2020-8286** (fixed in version 7.58.0-2ubuntu3.12)\n- **CVE-2020-8231** (fixed in version 7.58.0-2ubuntu3.10)\n- **CVE-2020-8285** (fixed in version 7.58.0-2ubuntu3.12)\n- **CVE-2019-5482** (fixed in version 7.58.0-2ubuntu3.8)\n- **CVE-2019-5481** (fixed in version 7.58.0-2ubuntu3.8)\n- **CVE-2023-27536** (fixed in version 7.58.0-2ubuntu3.24)\n- **CVE-2023-27538** (fixed in version 7.58.0-2ubuntu3.24)\n- **CVE-2023-27533** (fixed in version 7.58.0-2ubuntu3.24)\n- **CVE-2023-27535** (fixed in version 7.58.0-2ubuntu3.24)\n- **CVE-2023-27534** (fixed in version 7.58.0-2ubuntu3.24)\n- **CVE-2023-23916** (fixed in version 7.58.0-2ubuntu3.23)\n- **CVE-2022-35252** (fixed in version 7.58.0-2ubuntu3.20)\n- **CVE-2022-43552** (fixed in version 7.58.0-2ubuntu3.22)\n- **CVE-2022-32208** (fixed in version 7.58.0-2ubuntu3.19)\n- **CVE-2022-32206** (fixed in version 7.58.0-2ubuntu3.19)\n- **CVE-2022-27776** (fixed in version 7.58.0-2ubuntu3.17)\n- **CVE-2022-27774** (fixed in version 7.58.0-2ubuntu3.17)\n- **CVE-2022-22576** (fixed in version 7.58.0-2ubuntu3.17)\n- **CVE-2021-22947** (fixed in version 7.58.0-2ubuntu3.15)\n- **CVE-2021-22924** (fixed in version 7.58.0-2ubuntu3.14)\n- **CVE-2021-22898** (fixed in version 7.58.0-2ubuntu3.14)\n- **CVE-2020-8284** (fixed in version 7.58.0-2ubuntu3.12)\n- **CVE-2020-8177** (fixed in version 7.58.0-2ubuntu3.9)\n- **CVE-2019-5436** (fixed in version 7.58.0-2ubuntu3.7)\n",
+            "text": "Component curl version 7.58.0-2ubuntu3.6 has 30 vulnerabilities. Update to version 7.58.0-2ubuntu3.24 or later."
           },
           "properties": {
-            "component": "libgmp10",
+            "component": "curl",
             "cve_ids": [
-              "CVE-2021-43618"
+              "CVE-2022-32221",
+              "CVE-2022-27782",
+              "CVE-2022-27781",
+              "CVE-2021-22946",
+              "CVE-2021-22925",
+              "CVE-2021-22876",
+              "CVE-2020-8286",
+              "CVE-2020-8231",
+              "CVE-2020-8285",
+              "CVE-2019-5482",
+              "CVE-2019-5481",
+              "CVE-2023-27536",
+              "CVE-2023-27538",
+              "CVE-2023-27533",
+              "CVE-2023-27535",
+              "CVE-2023-27534",
+              "CVE-2023-23916",
+              "CVE-2022-35252",
+              "CVE-2022-43552",
+              "CVE-2022-32208",
+              "CVE-2022-32206",
+              "CVE-2022-27776",
+              "CVE-2022-27774",
+              "CVE-2022-22576",
+              "CVE-2021-22947",
+              "CVE-2021-22924",
+              "CVE-2021-22898",
+              "CVE-2020-8284",
+              "CVE-2020-8177",
+              "CVE-2019-5436"
             ],
-            "fix_version": "2:6.1.2+dfsg-2ubuntu0.1",
-            "github/alertType": "dependency",
-            "policies": [
-              "ssvc-out-of-cycle-policy"
-            ],
-            "version": "2:6.1.2+dfsg-2",
-            "vulnerabilities": 1
-          },
-          "ruleId": "vulnerable-component/libgmp10"
-        },
-        {
-          "fingerprints": {
-            "vulnerawiseFingerprint/v1": "libhogweed4/3.4-1"
-          },
-          "kind": "fail",
-          "level": "warning",
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "os-pkg/libhogweed4",
-                  "uriBaseId": "%SRCROOT%"
-                },
-                "region": {
-                  "startLine": 1
-                }
-              }
-            }
-          ],
-          "message": {
-            "markdown": "# Component: `libhogweed4`\n\n**Current version:** `3.4-1`\n\n## Recommendation\nUpdate to version `3.4.1-0ubuntu0.18.04.1` or later\n\n---\n\n## Vulnerabilities (3)\n\n- **CVE-2021-3580** (fixed in version 3.4.1-0ubuntu0.18.04.1)\n- **CVE-2021-20305** (fixed in version 3.4-1ubuntu0.1)\n- **CVE-2018-16869** (fixed in version 3.4.1-0ubuntu0.18.04.1)\n",
-            "text": "Component libhogweed4 version 3.4-1 has 3 vulnerabilities. Update to version 3.4.1-0ubuntu0.18.04.1 or later."
-          },
-          "properties": {
-            "component": "libhogweed4",
-            "cve_ids": [
-              "CVE-2021-3580",
-              "CVE-2021-20305",
-              "CVE-2018-16869"
-            ],
-            "fix_version": "3.4.1-0ubuntu0.18.04.1",
+            "fix_version": "7.58.0-2ubuntu3.24",
             "github/alertType": "dependency",
             "policies": [
               "ssvc-out-of-cycle-policy",
               "ssvc-scheduled-policy"
             ],
-            "version": "3.4-1",
-            "vulnerabilities": 3
+            "version": "7.58.0-2ubuntu3.6",
+            "vulnerabilities": 30
           },
-          "ruleId": "vulnerable-component/libhogweed4"
+          "ruleId": "vulnerable-component/curl"
+        },
+        {
+          "fingerprints": {
+            "vulnerawiseFingerprint/v1": "zlib1g/1:1.2.11.dfsg-0ubuntu2"
+          },
+          "kind": "fail",
+          "level": "warning",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "os-pkg/zlib1g",
+                  "uriBaseId": "%SRCROOT%"
+                },
+                "region": {
+                  "startLine": 1
+                }
+              }
+            }
+          ],
+          "message": {
+            "markdown": "# Component: `zlib1g`\n\n**Current version:** `1:1.2.11.dfsg-0ubuntu2`\n\n## Recommendation\nUpdate to version `1:1.2.11.dfsg-0ubuntu2.2` or later\n\n---\n\n## Vulnerabilities (2)\n\n- **CVE-2022-37434** (fixed in version 1:1.2.11.dfsg-0ubuntu2.2)\n- **CVE-2018-25032** (fixed in version 1:1.2.11.dfsg-0ubuntu2.1)\n",
+            "text": "Component zlib1g version 1:1.2.11.dfsg-0ubuntu2 has 2 vulnerabilities. Update to version 1:1.2.11.dfsg-0ubuntu2.2 or later."
+          },
+          "properties": {
+            "component": "zlib1g",
+            "cve_ids": [
+              "CVE-2022-37434",
+              "CVE-2018-25032"
+            ],
+            "fix_version": "1:1.2.11.dfsg-0ubuntu2.2",
+            "github/alertType": "dependency",
+            "policies": [
+              "ssvc-out-of-cycle-policy"
+            ],
+            "version": "1:1.2.11.dfsg-0ubuntu2",
+            "vulnerabilities": 2
+          },
+          "ruleId": "vulnerable-component/zlib1g"
+        },
+        {
+          "fingerprints": {
+            "vulnerawiseFingerprint/v1": "liblz4-1/0.0~r131-2ubuntu3"
+          },
+          "kind": "fail",
+          "level": "warning",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "os-pkg/liblz4-1",
+                  "uriBaseId": "%SRCROOT%"
+                },
+                "region": {
+                  "startLine": 1
+                }
+              }
+            }
+          ],
+          "message": {
+            "markdown": "# Component: `liblz4-1`\n\n**Current version:** `0.0~r131-2ubuntu3`\n\n## Recommendation\nUpdate to version `0.0~r131-2ubuntu3.1` or later\n\n---\n\n## Vulnerabilities (1)\n\n- **CVE-2021-3520** (fixed in version 0.0~r131-2ubuntu3.1)\n",
+            "text": "Component liblz4-1 version 0.0~r131-2ubuntu3 has 1 vulnerabilities. Update to version 0.0~r131-2ubuntu3.1 or later."
+          },
+          "properties": {
+            "component": "liblz4-1",
+            "cve_ids": [
+              "CVE-2021-3520"
+            ],
+            "fix_version": "0.0~r131-2ubuntu3.1",
+            "github/alertType": "dependency",
+            "policies": [
+              "ssvc-out-of-cycle-policy"
+            ],
+            "version": "0.0~r131-2ubuntu3",
+            "vulnerabilities": 1
+          },
+          "ruleId": "vulnerable-component/liblz4_1"
         },
         {
           "fingerprints": {
@@ -301,15 +594,15 @@
             }
           ],
           "message": {
-            "markdown": "# Component: `perl-base`\n\n**Current version:** `5.26.1-6ubuntu0.3`\n\n## Recommendation\nUpdate to version `5.26.1-6ubuntu0.7` or later\n\n---\n\n## Vulnerabilities (5)\n\n- **CVE-2020-12723** (fixed in version 5.26.1-6ubuntu0.5)\n- **CVE-2020-10878** (fixed in version 5.26.1-6ubuntu0.5)\n- **CVE-2020-10543** (fixed in version 5.26.1-6ubuntu0.5)\n- **CVE-2023-31484** (fixed in version 5.26.1-6ubuntu0.7)\n- **CVE-2020-16156** (fixed in version 5.26.1-6ubuntu0.6)\n",
+            "markdown": "# Component: `perl-base`\n\n**Current version:** `5.26.1-6ubuntu0.3`\n\n## Recommendation\nUpdate to version `5.26.1-6ubuntu0.7` or later\n\n---\n\n## Vulnerabilities (5)\n\n- **CVE-2020-10543** (fixed in version 5.26.1-6ubuntu0.5)\n- **CVE-2020-12723** (fixed in version 5.26.1-6ubuntu0.5)\n- **CVE-2020-10878** (fixed in version 5.26.1-6ubuntu0.5)\n- **CVE-2023-31484** (fixed in version 5.26.1-6ubuntu0.7)\n- **CVE-2020-16156** (fixed in version 5.26.1-6ubuntu0.6)\n",
             "text": "Component perl-base version 5.26.1-6ubuntu0.3 has 5 vulnerabilities. Update to version 5.26.1-6ubuntu0.7 or later."
           },
           "properties": {
             "component": "perl-base",
             "cve_ids": [
+              "CVE-2020-10543",
               "CVE-2020-12723",
               "CVE-2020-10878",
-              "CVE-2020-10543",
               "CVE-2023-31484",
               "CVE-2020-16156"
             ],
@@ -364,7 +657,7 @@
         },
         {
           "fingerprints": {
-            "vulnerawiseFingerprint/v1": "libseccomp2/2.3.1-2.1ubuntu4"
+            "vulnerawiseFingerprint/v1": "tar/1.29b-2ubuntu0.1"
           },
           "kind": "fail",
           "level": "warning",
@@ -372,7 +665,7 @@
             {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "os-pkg/libseccomp2",
+                  "uri": "os-pkg/tar",
                   "uriBaseId": "%SRCROOT%"
                 },
                 "region": {
@@ -382,63 +675,65 @@
             }
           ],
           "message": {
-            "markdown": "# Component: `libseccomp2`\n\n**Current version:** `2.3.1-2.1ubuntu4`\n\n## Recommendation\nUpdate to version `2.4.1-0ubuntu0.18.04.2` or later\n\n---\n\n## Vulnerabilities (1)\n\n- **CVE-2019-9893** (fixed in version 2.4.1-0ubuntu0.18.04.2)\n",
-            "text": "Component libseccomp2 version 2.3.1-2.1ubuntu4 has 1 vulnerabilities. Update to version 2.4.1-0ubuntu0.18.04.2 or later."
+            "markdown": "# Component: `tar`\n\n**Current version:** `1.29b-2ubuntu0.1`\n\n## Recommendation\nUpdate to version `1.29b-2ubuntu0.4` or later\n\n---\n\n## Vulnerabilities (4)\n\n- **CVE-2019-9923** (fixed in version 1.29b-2ubuntu0.2)\n- **CVE-2022-48303** (fixed in version 1.29b-2ubuntu0.4)\n- **CVE-2021-20193** (fixed in version 1.29b-2ubuntu0.3)\n- **CVE-2018-20482** (fixed in version 1.29b-2ubuntu0.2)\n",
+            "text": "Component tar version 1.29b-2ubuntu0.1 has 4 vulnerabilities. Update to version 1.29b-2ubuntu0.4 or later."
           },
           "properties": {
-            "component": "libseccomp2",
+            "component": "tar",
             "cve_ids": [
-              "CVE-2019-9893"
+              "CVE-2019-9923",
+              "CVE-2022-48303",
+              "CVE-2021-20193",
+              "CVE-2018-20482"
             ],
-            "fix_version": "2.4.1-0ubuntu0.18.04.2",
+            "fix_version": "1.29b-2ubuntu0.4",
+            "github/alertType": "dependency",
+            "policies": [
+              "ssvc-out-of-cycle-policy",
+              "ssvc-scheduled-policy"
+            ],
+            "version": "1.29b-2ubuntu0.1",
+            "vulnerabilities": 4
+          },
+          "ruleId": "vulnerable-component/tar"
+        },
+        {
+          "fingerprints": {
+            "vulnerawiseFingerprint/v1": "login/1:4.5-1ubuntu1"
+          },
+          "kind": "fail",
+          "level": "warning",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "os-pkg/login",
+                  "uriBaseId": "%SRCROOT%"
+                },
+                "region": {
+                  "startLine": 1
+                }
+              }
+            }
+          ],
+          "message": {
+            "markdown": "# Component: `login`\n\n**Current version:** `1:4.5-1ubuntu1`\n\n## Recommendation\nUpdate to version `1:4.5-1ubuntu2.2` or later\n\n---\n\n## Vulnerabilities (1)\n\n- **CVE-2018-7169** (fixed in version 1:4.5-1ubuntu2.2)\n",
+            "text": "Component login version 1:4.5-1ubuntu1 has 1 vulnerabilities. Update to version 1:4.5-1ubuntu2.2 or later."
+          },
+          "properties": {
+            "component": "login",
+            "cve_ids": [
+              "CVE-2018-7169"
+            ],
+            "fix_version": "1:4.5-1ubuntu2.2",
             "github/alertType": "dependency",
             "policies": [
               "ssvc-out-of-cycle-policy"
             ],
-            "version": "2.3.1-2.1ubuntu4",
+            "version": "1:4.5-1ubuntu1",
             "vulnerabilities": 1
           },
-          "ruleId": "vulnerable-component/libseccomp2"
-        },
-        {
-          "fingerprints": {
-            "vulnerawiseFingerprint/v1": "e2fsprogs/1.44.1-1ubuntu1.1"
-          },
-          "kind": "fail",
-          "level": "warning",
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "os-pkg/e2fsprogs",
-                  "uriBaseId": "%SRCROOT%"
-                },
-                "region": {
-                  "startLine": 1
-                }
-              }
-            }
-          ],
-          "message": {
-            "markdown": "# Component: `e2fsprogs`\n\n**Current version:** `1.44.1-1ubuntu1.1`\n\n## Recommendation\nUpdate to version `1.44.1-1ubuntu1.4` or later\n\n---\n\n## Vulnerabilities (3)\n\n- **CVE-2022-1304** (fixed in version 1.44.1-1ubuntu1.4)\n- **CVE-2019-5188** (fixed in version 1.44.1-1ubuntu1.3)\n- **CVE-2019-5094** (fixed in version 1.44.1-1ubuntu1.2)\n",
-            "text": "Component e2fsprogs version 1.44.1-1ubuntu1.1 has 3 vulnerabilities. Update to version 1.44.1-1ubuntu1.4 or later."
-          },
-          "properties": {
-            "component": "e2fsprogs",
-            "cve_ids": [
-              "CVE-2022-1304",
-              "CVE-2019-5188",
-              "CVE-2019-5094"
-            ],
-            "fix_version": "1.44.1-1ubuntu1.4",
-            "github/alertType": "dependency",
-            "policies": [
-              "ssvc-scheduled-policy"
-            ],
-            "version": "1.44.1-1ubuntu1.1",
-            "vulnerabilities": 3
-          },
-          "ruleId": "vulnerable-component/e2fsprogs"
+          "ruleId": "vulnerable-component/login"
         },
         {
           "fingerprints": {
@@ -481,7 +776,7 @@
         },
         {
           "fingerprints": {
-            "vulnerawiseFingerprint/v1": "zlib1g/1:1.2.11.dfsg-0ubuntu2"
+            "vulnerawiseFingerprint/v1": "libpam-modules/1.1.8-3.6ubuntu2"
           },
           "kind": "fail",
           "level": "warning",
@@ -489,7 +784,7 @@
             {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "os-pkg/zlib1g",
+                  "uri": "os-pkg/libpam-modules",
                   "uriBaseId": "%SRCROOT%"
                 },
                 "region": {
@@ -499,28 +794,27 @@
             }
           ],
           "message": {
-            "markdown": "# Component: `zlib1g`\n\n**Current version:** `1:1.2.11.dfsg-0ubuntu2`\n\n## Recommendation\nUpdate to version `1:1.2.11.dfsg-0ubuntu2.2` or later\n\n---\n\n## Vulnerabilities (2)\n\n- **CVE-2022-37434** (fixed in version 1:1.2.11.dfsg-0ubuntu2.2)\n- **CVE-2018-25032** (fixed in version 1:1.2.11.dfsg-0ubuntu2.1)\n",
-            "text": "Component zlib1g version 1:1.2.11.dfsg-0ubuntu2 has 2 vulnerabilities. Update to version 1:1.2.11.dfsg-0ubuntu2.2 or later."
+            "markdown": "# Component: `libpam-modules`\n\n**Current version:** `1.1.8-3.6ubuntu2`\n\n## Recommendation\nUpdate to version `1.1.8-3.6ubuntu2.18.04.4` or later\n\n---\n\n## Vulnerabilities (1)\n\n- **CVE-2022-28321** (fixed in version 1.1.8-3.6ubuntu2.18.04.4)\n",
+            "text": "Component libpam-modules version 1.1.8-3.6ubuntu2 has 1 vulnerabilities. Update to version 1.1.8-3.6ubuntu2.18.04.4 or later."
           },
           "properties": {
-            "component": "zlib1g",
+            "component": "libpam-modules",
             "cve_ids": [
-              "CVE-2022-37434",
-              "CVE-2018-25032"
+              "CVE-2022-28321"
             ],
-            "fix_version": "1:1.2.11.dfsg-0ubuntu2.2",
+            "fix_version": "1.1.8-3.6ubuntu2.18.04.4",
             "github/alertType": "dependency",
             "policies": [
               "ssvc-out-of-cycle-policy"
             ],
-            "version": "1:1.2.11.dfsg-0ubuntu2",
-            "vulnerabilities": 2
+            "version": "1.1.8-3.6ubuntu2",
+            "vulnerabilities": 1
           },
-          "ruleId": "vulnerable-component/zlib1g"
+          "ruleId": "vulnerable-component/libpam_modules"
         },
         {
           "fingerprints": {
-            "vulnerawiseFingerprint/v1": "gpgv/2.2.4-1ubuntu1.2"
+            "vulnerawiseFingerprint/v1": "libhogweed4/3.4-1"
           },
           "kind": "fail",
           "level": "warning",
@@ -528,7 +822,7 @@
             {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "os-pkg/gpgv",
+                  "uri": "os-pkg/libhogweed4",
                   "uriBaseId": "%SRCROOT%"
                 },
                 "region": {
@@ -538,144 +832,26 @@
             }
           ],
           "message": {
-            "markdown": "# Component: `gpgv`\n\n**Current version:** `2.2.4-1ubuntu1.2`\n\n## Recommendation\nUpdate to version `2.2.4-1ubuntu1.6` or later\n\n---\n\n## Vulnerabilities (3)\n\n- **CVE-2019-14855** (fixed in version 2.2.4-1ubuntu1.3)\n- **CVE-2019-13050** (fixed in version 2.2.4-1ubuntu1.5)\n- **CVE-2022-34903** (fixed in version 2.2.4-1ubuntu1.6)\n",
-            "text": "Component gpgv version 2.2.4-1ubuntu1.2 has 3 vulnerabilities. Update to version 2.2.4-1ubuntu1.6 or later."
+            "markdown": "# Component: `libhogweed4`\n\n**Current version:** `3.4-1`\n\n## Recommendation\nUpdate to version `3.4.1-0ubuntu0.18.04.1` or later\n\n---\n\n## Vulnerabilities (3)\n\n- **CVE-2021-3580** (fixed in version 3.4.1-0ubuntu0.18.04.1)\n- **CVE-2021-20305** (fixed in version 3.4-1ubuntu0.1)\n- **CVE-2018-16869** (fixed in version 3.4.1-0ubuntu0.18.04.1)\n",
+            "text": "Component libhogweed4 version 3.4-1 has 3 vulnerabilities. Update to version 3.4.1-0ubuntu0.18.04.1 or later."
           },
           "properties": {
-            "component": "gpgv",
+            "component": "libhogweed4",
             "cve_ids": [
-              "CVE-2019-14855",
-              "CVE-2019-13050",
-              "CVE-2022-34903"
+              "CVE-2021-3580",
+              "CVE-2021-20305",
+              "CVE-2018-16869"
             ],
-            "fix_version": "2.2.4-1ubuntu1.6",
+            "fix_version": "3.4.1-0ubuntu0.18.04.1",
             "github/alertType": "dependency",
             "policies": [
               "ssvc-out-of-cycle-policy",
               "ssvc-scheduled-policy"
             ],
-            "version": "2.2.4-1ubuntu1.2",
+            "version": "3.4-1",
             "vulnerabilities": 3
           },
-          "ruleId": "vulnerable-component/gpgv"
-        },
-        {
-          "fingerprints": {
-            "vulnerawiseFingerprint/v1": "libidn2-0/2.0.4-1.1build2"
-          },
-          "kind": "fail",
-          "level": "warning",
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "os-pkg/libidn2-0",
-                  "uriBaseId": "%SRCROOT%"
-                },
-                "region": {
-                  "startLine": 1
-                }
-              }
-            }
-          ],
-          "message": {
-            "markdown": "# Component: `libidn2-0`\n\n**Current version:** `2.0.4-1.1build2`\n\n## Recommendation\nUpdate to version `2.0.4-1.1ubuntu0.2` or later\n\n---\n\n## Vulnerabilities (2)\n\n- **CVE-2019-12290** (fixed in version 2.0.4-1.1ubuntu0.2)\n- **CVE-2019-18224** (fixed in version 2.0.4-1.1ubuntu0.2)\n",
-            "text": "Component libidn2-0 version 2.0.4-1.1build2 has 2 vulnerabilities. Update to version 2.0.4-1.1ubuntu0.2 or later."
-          },
-          "properties": {
-            "component": "libidn2-0",
-            "cve_ids": [
-              "CVE-2019-12290",
-              "CVE-2019-18224"
-            ],
-            "fix_version": "2.0.4-1.1ubuntu0.2",
-            "github/alertType": "dependency",
-            "policies": [
-              "ssvc-out-of-cycle-policy"
-            ],
-            "version": "2.0.4-1.1build2",
-            "vulnerabilities": 2
-          },
-          "ruleId": "vulnerable-component/libidn2_0"
-        },
-        {
-          "fingerprints": {
-            "vulnerawiseFingerprint/v1": "gcc-8-base/8.2.0-1ubuntu2~18.04"
-          },
-          "kind": "fail",
-          "level": "warning",
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "os-pkg/gcc-8-base",
-                  "uriBaseId": "%SRCROOT%"
-                },
-                "region": {
-                  "startLine": 1
-                }
-              }
-            }
-          ],
-          "message": {
-            "markdown": "# Component: `gcc-8-base`\n\n**Current version:** `8.2.0-1ubuntu2~18.04`\n\n## Recommendation\nUpdate to version `8.3.0-26ubuntu1~18.04` or later\n\n---\n\n## Vulnerabilities (1)\n\n- **CVE-2019-15847** (fixed in version 8.3.0-26ubuntu1~18.04)\n",
-            "text": "Component gcc-8-base version 8.2.0-1ubuntu2~18.04 has 1 vulnerabilities. Update to version 8.3.0-26ubuntu1~18.04 or later."
-          },
-          "properties": {
-            "component": "gcc-8-base",
-            "cve_ids": [
-              "CVE-2019-15847"
-            ],
-            "fix_version": "8.3.0-26ubuntu1~18.04",
-            "github/alertType": "dependency",
-            "policies": [
-              "ssvc-out-of-cycle-policy"
-            ],
-            "version": "8.2.0-1ubuntu2~18.04",
-            "vulnerabilities": 1
-          },
-          "ruleId": "vulnerable-component/gcc_8_base"
-        },
-        {
-          "fingerprints": {
-            "vulnerawiseFingerprint/v1": "libsepol1/2.7-1"
-          },
-          "kind": "fail",
-          "level": "warning",
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "os-pkg/libsepol1",
-                  "uriBaseId": "%SRCROOT%"
-                },
-                "region": {
-                  "startLine": 1
-                }
-              }
-            }
-          ],
-          "message": {
-            "markdown": "# Component: `libsepol1`\n\n**Current version:** `2.7-1`\n\n## Recommendation\nUpdate to version `2.7-1ubuntu0.1` or later\n\n---\n\n## Vulnerabilities (4)\n\n- **CVE-2021-36087** (fixed in version 2.7-1ubuntu0.1)\n- **CVE-2021-36084** (fixed in version 2.7-1ubuntu0.1)\n- **CVE-2021-36085** (fixed in version 2.7-1ubuntu0.1)\n- **CVE-2021-36086** (fixed in version 2.7-1ubuntu0.1)\n",
-            "text": "Component libsepol1 version 2.7-1 has 4 vulnerabilities. Update to version 2.7-1ubuntu0.1 or later."
-          },
-          "properties": {
-            "component": "libsepol1",
-            "cve_ids": [
-              "CVE-2021-36087",
-              "CVE-2021-36084",
-              "CVE-2021-36085",
-              "CVE-2021-36086"
-            ],
-            "fix_version": "2.7-1ubuntu0.1",
-            "github/alertType": "dependency",
-            "policies": [
-              "ssvc-scheduled-policy"
-            ],
-            "version": "2.7-1",
-            "vulnerabilities": 4
-          },
-          "ruleId": "vulnerable-component/libsepol1"
+          "ruleId": "vulnerable-component/libhogweed4"
         },
         {
           "fingerprints": {
@@ -717,7 +893,7 @@
         },
         {
           "fingerprints": {
-            "vulnerawiseFingerprint/v1": "dpkg/1.19.0.5ubuntu2.1"
+            "vulnerawiseFingerprint/v1": "libsqlite3-0/3.22.0-1"
           },
           "kind": "fail",
           "level": "warning",
@@ -725,7 +901,7 @@
             {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "os-pkg/dpkg",
+                  "uri": "os-pkg/libsqlite3-0",
                   "uriBaseId": "%SRCROOT%"
                 },
                 "region": {
@@ -735,350 +911,48 @@
             }
           ],
           "message": {
-            "markdown": "# Component: `dpkg`\n\n**Current version:** `1.19.0.5ubuntu2.1`\n\n## Recommendation\nUpdate to version `1.19.0.5ubuntu2.4` or later\n\n---\n\n## Vulnerabilities (1)\n\n- **CVE-2022-1664** (fixed in version 1.19.0.5ubuntu2.4)\n",
-            "text": "Component dpkg version 1.19.0.5ubuntu2.1 has 1 vulnerabilities. Update to version 1.19.0.5ubuntu2.4 or later."
+            "markdown": "# Component: `libsqlite3-0`\n\n**Current version:** `3.22.0-1`\n\n## Recommendation\nUpdate to version `3.22.0-1ubuntu0.7` or later\n\n---\n\n## Vulnerabilities (25)\n\n- **CVE-2020-35525** (fixed in version 3.22.0-1ubuntu0.6)\n- **CVE-2022-35737** (fixed in version 3.22.0-1ubuntu0.7)\n- **CVE-2021-36690** (fixed in version 3.22.0-1ubuntu0.5)\n- **CVE-2020-9327** (fixed in version 3.22.0-1ubuntu0.3)\n- **CVE-2019-20218** (fixed in version 3.22.0-1ubuntu0.3)\n- **CVE-2019-19925** (fixed in version 3.22.0-1ubuntu0.3)\n- **CVE-2019-19926** (fixed in version 3.22.0-1ubuntu0.3)\n- **CVE-2019-19923** (fixed in version 3.22.0-1ubuntu0.3)\n- **CVE-2019-19959** (fixed in version 3.22.0-1ubuntu0.3)\n- **CVE-2018-20505** (fixed in version 3.22.0-1ubuntu0.1)\n- **CVE-2019-9936** (fixed in version 3.22.0-1ubuntu0.1)\n- **CVE-2018-8740** (fixed in version 3.22.0-1ubuntu0.4)\n- **CVE-2019-9937** (fixed in version 3.22.0-1ubuntu0.1)\n- **CVE-2020-13630** (fixed in version 3.22.0-1ubuntu0.4)\n- **CVE-2020-13632** (fixed in version 3.22.0-1ubuntu0.4)\n- **CVE-2020-13434** (fixed in version 3.22.0-1ubuntu0.4)\n- **CVE-2019-13753** (fixed in version 3.22.0-1ubuntu0.3)\n- **CVE-2019-13752** (fixed in version 3.22.0-1ubuntu0.3)\n- **CVE-2019-13750** (fixed in version 3.22.0-1ubuntu0.3)\n- **CVE-2019-13751** (fixed in version 3.22.0-1ubuntu0.3)\n- **CVE-2019-13734** (fixed in version 3.22.0-1ubuntu0.3)\n- **CVE-2019-16168** (fixed in version 3.22.0-1ubuntu0.2)\n- **CVE-2019-5827** (fixed in version 3.22.0-1ubuntu0.2)\n- **CVE-2018-20506** (fixed in version 3.22.0-1ubuntu0.1)\n- **CVE-2018-20346** (fixed in version 3.22.0-1ubuntu0.1)\n",
+            "text": "Component libsqlite3-0 version 3.22.0-1 has 25 vulnerabilities. Update to version 3.22.0-1ubuntu0.7 or later."
           },
           "properties": {
-            "component": "dpkg",
+            "component": "libsqlite3-0",
             "cve_ids": [
-              "CVE-2022-1664"
+              "CVE-2020-35525",
+              "CVE-2022-35737",
+              "CVE-2021-36690",
+              "CVE-2020-9327",
+              "CVE-2019-20218",
+              "CVE-2019-19925",
+              "CVE-2019-19926",
+              "CVE-2019-19923",
+              "CVE-2019-19959",
+              "CVE-2018-20505",
+              "CVE-2019-9936",
+              "CVE-2018-8740",
+              "CVE-2019-9937",
+              "CVE-2020-13630",
+              "CVE-2020-13632",
+              "CVE-2020-13434",
+              "CVE-2019-13753",
+              "CVE-2019-13752",
+              "CVE-2019-13750",
+              "CVE-2019-13751",
+              "CVE-2019-13734",
+              "CVE-2019-16168",
+              "CVE-2019-5827",
+              "CVE-2018-20506",
+              "CVE-2018-20346"
             ],
-            "fix_version": "1.19.0.5ubuntu2.4",
-            "github/alertType": "dependency",
-            "policies": [
-              "ssvc-out-of-cycle-policy"
-            ],
-            "version": "1.19.0.5ubuntu2.1",
-            "vulnerabilities": 1
-          },
-          "ruleId": "vulnerable-component/dpkg"
-        },
-        {
-          "fingerprints": {
-            "vulnerawiseFingerprint/v1": "libldap-2.4-2/2.4.45+dfsg-1ubuntu1.1"
-          },
-          "kind": "fail",
-          "level": "warning",
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "os-pkg/libldap-2.4-2",
-                  "uriBaseId": "%SRCROOT%"
-                },
-                "region": {
-                  "startLine": 1
-                }
-              }
-            }
-          ],
-          "message": {
-            "markdown": "# Component: `libldap-2.4-2`\n\n**Current version:** `2.4.45+dfsg-1ubuntu1.1`\n\n## Recommendation\nUpdate to version `2.4.45+dfsg-1ubuntu1.11` or later\n\n---\n\n## Vulnerabilities (18)\n\n- **CVE-2022-29155** (fixed in version 2.4.45+dfsg-1ubuntu1.11)\n- **CVE-2020-25710** (fixed in version 2.4.45+dfsg-1ubuntu1.8)\n- **CVE-2020-36229** (fixed in version 2.4.45+dfsg-1ubuntu1.9)\n- **CVE-2020-36230** (fixed in version 2.4.45+dfsg-1ubuntu1.9)\n- **CVE-2021-27212** (fixed in version 2.4.45+dfsg-1ubuntu1.10)\n- **CVE-2020-36227** (fixed in version 2.4.45+dfsg-1ubuntu1.9)\n- **CVE-2020-36228** (fixed in version 2.4.45+dfsg-1ubuntu1.9)\n- **CVE-2020-36225** (fixed in version 2.4.45+dfsg-1ubuntu1.9)\n- **CVE-2020-36224** (fixed in version 2.4.45+dfsg-1ubuntu1.9)\n- **CVE-2020-36223** (fixed in version 2.4.45+dfsg-1ubuntu1.9)\n- **CVE-2020-36226** (fixed in version 2.4.45+dfsg-1ubuntu1.9)\n- **CVE-2020-36222** (fixed in version 2.4.45+dfsg-1ubuntu1.9)\n- **CVE-2020-25692** (fixed in version 2.4.45+dfsg-1ubuntu1.7)\n- **CVE-2020-36221** (fixed in version 2.4.45+dfsg-1ubuntu1.9)\n- **CVE-2020-25709** (fixed in version 2.4.45+dfsg-1ubuntu1.8)\n- **CVE-2020-12243** (fixed in version 2.4.45+dfsg-1ubuntu1.5)\n- **CVE-2019-13565** (fixed in version 2.4.45+dfsg-1ubuntu1.3)\n- **CVE-2019-13057** (fixed in version 2.4.45+dfsg-1ubuntu1.3)\n",
-            "text": "Component libldap-2.4-2 version 2.4.45+dfsg-1ubuntu1.1 has 18 vulnerabilities. Update to version 2.4.45+dfsg-1ubuntu1.11 or later."
-          },
-          "properties": {
-            "component": "libldap-2.4-2",
-            "cve_ids": [
-              "CVE-2022-29155",
-              "CVE-2020-25710",
-              "CVE-2020-36229",
-              "CVE-2020-36230",
-              "CVE-2021-27212",
-              "CVE-2020-36227",
-              "CVE-2020-36228",
-              "CVE-2020-36225",
-              "CVE-2020-36224",
-              "CVE-2020-36223",
-              "CVE-2020-36226",
-              "CVE-2020-36222",
-              "CVE-2020-25692",
-              "CVE-2020-36221",
-              "CVE-2020-25709",
-              "CVE-2020-12243",
-              "CVE-2019-13565",
-              "CVE-2019-13057"
-            ],
-            "fix_version": "2.4.45+dfsg-1ubuntu1.11",
+            "fix_version": "3.22.0-1ubuntu0.7",
             "github/alertType": "dependency",
             "policies": [
               "ssvc-out-of-cycle-policy",
               "ssvc-scheduled-policy"
             ],
-            "version": "2.4.45+dfsg-1ubuntu1.1",
-            "vulnerabilities": 18
+            "version": "3.22.0-1",
+            "vulnerabilities": 25
           },
-          "ruleId": "vulnerable-component/libldap_2_4_2"
-        },
-        {
-          "fingerprints": {
-            "vulnerawiseFingerprint/v1": "libc-bin/2.27-3ubuntu1"
-          },
-          "kind": "fail",
-          "level": "warning",
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "os-pkg/libc-bin",
-                  "uriBaseId": "%SRCROOT%"
-                },
-                "region": {
-                  "startLine": 1
-                }
-              }
-            }
-          ],
-          "message": {
-            "markdown": "# Component: `libc-bin`\n\n**Current version:** `2.27-3ubuntu1`\n\n## Recommendation\nUpdate to version `2.27-3ubuntu1.5` or later\n\n---\n\n## Vulnerabilities (18)\n\n- **CVE-2022-23219** (fixed in version 2.27-3ubuntu1.5)\n- **CVE-2022-23218** (fixed in version 2.27-3ubuntu1.5)\n- **CVE-2021-35942** (fixed in version 2.27-3ubuntu1.5)\n- **CVE-2021-3326** (fixed in version 2.27-3ubuntu1.5)\n- **CVE-2018-19591** (fixed in version 2.27-3ubuntu1.2)\n- **CVE-2019-9169** (fixed in version 2.27-3ubuntu1.2)\n- **CVE-2018-11236** (fixed in version 2.27-3ubuntu1.2)\n- **CVE-2021-3999** (fixed in version 2.27-3ubuntu1.5)\n- **CVE-2020-27618** (fixed in version 2.27-3ubuntu1.5)\n- **CVE-2019-25013** (fixed in version 2.27-3ubuntu1.5)\n- **CVE-2020-29562** (fixed in version 2.27-3ubuntu1.5)\n- **CVE-2020-1751** (fixed in version 2.27-3ubuntu1.2)\n- **CVE-2020-1752** (fixed in version 2.27-3ubuntu1.2)\n- **CVE-2020-6096** (fixed in version 2.27-3ubuntu1.5)\n- **CVE-2020-10029** (fixed in version 2.27-3ubuntu1.2)\n- **CVE-2019-19126** (fixed in version 2.27-3ubuntu1.2)\n- **CVE-2016-10228** (fixed in version 2.27-3ubuntu1.5)\n- **CVE-2018-11237** (fixed in version 2.27-3ubuntu1.2)\n",
-            "text": "Component libc-bin version 2.27-3ubuntu1 has 18 vulnerabilities. Update to version 2.27-3ubuntu1.5 or later."
-          },
-          "properties": {
-            "component": "libc-bin",
-            "cve_ids": [
-              "CVE-2022-23219",
-              "CVE-2022-23218",
-              "CVE-2021-35942",
-              "CVE-2021-3326",
-              "CVE-2018-19591",
-              "CVE-2019-9169",
-              "CVE-2018-11236",
-              "CVE-2021-3999",
-              "CVE-2020-27618",
-              "CVE-2019-25013",
-              "CVE-2020-29562",
-              "CVE-2020-1751",
-              "CVE-2020-1752",
-              "CVE-2020-6096",
-              "CVE-2020-10029",
-              "CVE-2019-19126",
-              "CVE-2016-10228",
-              "CVE-2018-11237"
-            ],
-            "fix_version": "2.27-3ubuntu1.5",
-            "github/alertType": "dependency",
-            "policies": [
-              "ssvc-out-of-cycle-policy",
-              "ssvc-scheduled-policy"
-            ],
-            "version": "2.27-3ubuntu1",
-            "vulnerabilities": 18
-          },
-          "ruleId": "vulnerable-component/libc_bin"
-        },
-        {
-          "fingerprints": {
-            "vulnerawiseFingerprint/v1": "bsdutils/1:2.31.1-0.4ubuntu3.3"
-          },
-          "kind": "fail",
-          "level": "warning",
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "os-pkg/bsdutils",
-                  "uriBaseId": "%SRCROOT%"
-                },
-                "region": {
-                  "startLine": 1
-                }
-              }
-            }
-          ],
-          "message": {
-            "markdown": "# Component: `bsdutils`\n\n**Current version:** `1:2.31.1-0.4ubuntu3.3`\n\n## Recommendation\nUpdate to version `2.31.1-0.4ubuntu3.7` or later\n\n---\n\n## Vulnerabilities (1)\n\n- **CVE-2018-7738** (fixed in version 2.31.1-0.4ubuntu3.7)\n",
-            "text": "Component bsdutils version 1:2.31.1-0.4ubuntu3.3 has 1 vulnerabilities. Update to version 2.31.1-0.4ubuntu3.7 or later."
-          },
-          "properties": {
-            "component": "bsdutils",
-            "cve_ids": [
-              "CVE-2018-7738"
-            ],
-            "fix_version": "2.31.1-0.4ubuntu3.7",
-            "github/alertType": "dependency",
-            "policies": [
-              "ssvc-scheduled-policy"
-            ],
-            "version": "1:2.31.1-0.4ubuntu3.3",
-            "vulnerabilities": 1
-          },
-          "ruleId": "vulnerable-component/bsdutils"
-        },
-        {
-          "fingerprints": {
-            "vulnerawiseFingerprint/v1": "libp11-kit0/0.23.9-2"
-          },
-          "kind": "fail",
-          "level": "warning",
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "os-pkg/libp11-kit0",
-                  "uriBaseId": "%SRCROOT%"
-                },
-                "region": {
-                  "startLine": 1
-                }
-              }
-            }
-          ],
-          "message": {
-            "markdown": "# Component: `libp11-kit0`\n\n**Current version:** `0.23.9-2`\n\n## Recommendation\nUpdate to version `0.23.9-2ubuntu0.1` or later\n\n---\n\n## Vulnerabilities (3)\n\n- **CVE-2020-29363** (fixed in version 0.23.9-2ubuntu0.1)\n- **CVE-2020-29362** (fixed in version 0.23.9-2ubuntu0.1)\n- **CVE-2020-29361** (fixed in version 0.23.9-2ubuntu0.1)\n",
-            "text": "Component libp11-kit0 version 0.23.9-2 has 3 vulnerabilities. Update to version 0.23.9-2ubuntu0.1 or later."
-          },
-          "properties": {
-            "component": "libp11-kit0",
-            "cve_ids": [
-              "CVE-2020-29363",
-              "CVE-2020-29362",
-              "CVE-2020-29361"
-            ],
-            "fix_version": "0.23.9-2ubuntu0.1",
-            "github/alertType": "dependency",
-            "policies": [
-              "ssvc-out-of-cycle-policy"
-            ],
-            "version": "0.23.9-2",
-            "vulnerabilities": 3
-          },
-          "ruleId": "vulnerable-component/libp11_kit0"
-        },
-        {
-          "fingerprints": {
-            "vulnerawiseFingerprint/v1": "gzip/1.6-5ubuntu1"
-          },
-          "kind": "fail",
-          "level": "warning",
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "os-pkg/gzip",
-                  "uriBaseId": "%SRCROOT%"
-                },
-                "region": {
-                  "startLine": 1
-                }
-              }
-            }
-          ],
-          "message": {
-            "markdown": "# Component: `gzip`\n\n**Current version:** `1.6-5ubuntu1`\n\n## Recommendation\nUpdate to version `1.6-5ubuntu1.2` or later\n\n---\n\n## Vulnerabilities (1)\n\n- **CVE-2022-1271** (fixed in version 1.6-5ubuntu1.2)\n",
-            "text": "Component gzip version 1.6-5ubuntu1 has 1 vulnerabilities. Update to version 1.6-5ubuntu1.2 or later."
-          },
-          "properties": {
-            "component": "gzip",
-            "cve_ids": [
-              "CVE-2022-1271"
-            ],
-            "fix_version": "1.6-5ubuntu1.2",
-            "github/alertType": "dependency",
-            "policies": [
-              "ssvc-scheduled-policy"
-            ],
-            "version": "1.6-5ubuntu1",
-            "vulnerabilities": 1
-          },
-          "ruleId": "vulnerable-component/gzip"
-        },
-        {
-          "fingerprints": {
-            "vulnerawiseFingerprint/v1": "libssl1.1/1.1.0g-2ubuntu4.3"
-          },
-          "kind": "fail",
-          "level": "warning",
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "os-pkg/libssl1.1",
-                  "uriBaseId": "%SRCROOT%"
-                },
-                "region": {
-                  "startLine": 1
-                }
-              }
-            }
-          ],
-          "message": {
-            "markdown": "# Component: `libssl1.1`\n\n**Current version:** `1.1.0g-2ubuntu4.3`\n\n## Recommendation\nUpdate to version `1.1.1-1ubuntu2.1~18.04.23` or later\n\n---\n\n## Vulnerabilities (23)\n\n- **CVE-2023-0466** (fixed in version 1.1.1-1ubuntu2.1~18.04.22)\n- **CVE-2023-0465** (fixed in version 1.1.1-1ubuntu2.1~18.04.22)\n- **CVE-2023-0215** (fixed in version 1.1.1-1ubuntu2.1~18.04.21)\n- **CVE-2022-4450** (fixed in version 1.1.1-1ubuntu2.1~18.04.21)\n- **CVE-2023-0464** (fixed in version 1.1.1-1ubuntu2.1~18.04.22)\n- **CVE-2022-2097** (fixed in version 1.1.1-1ubuntu2.1~18.04.20)\n- **CVE-2022-2068** (fixed in version 1.1.1-1ubuntu2.1~18.04.19)\n- **CVE-2022-0778** (fixed in version 1.1.1-1ubuntu2.1~18.04.15)\n- **CVE-2022-1292** (fixed in version 1.1.1-1ubuntu2.1~18.04.17)\n- **CVE-2021-3711** (fixed in version 1.1.1-1ubuntu2.1~18.04.13)\n- **CVE-2021-23840** (fixed in version 1.1.1-1ubuntu2.1~18.04.8)\n- **CVE-2019-1551** (fixed in version 1.1.1-1ubuntu2.1~18.04.6)\n- **CVE-2019-1549** (fixed in version 1.1.1-1ubuntu2.1~18.04.6)\n- **CVE-2023-2650** (fixed in version 1.1.1-1ubuntu2.1~18.04.23)\n- **CVE-2023-0286** (fixed in version 1.1.1-1ubuntu2.1~18.04.21)\n- **CVE-2022-4304** (fixed in version 1.1.1-1ubuntu2.1~18.04.21)\n- **CVE-2021-3712** (fixed in version 1.1.1-1ubuntu2.1~18.04.13)\n- **CVE-2021-3449** (fixed in version 1.1.1-1ubuntu2.1~18.04.9)\n- **CVE-2021-23841** (fixed in version 1.1.1-1ubuntu2.1~18.04.8)\n- **CVE-2020-1971** (fixed in version 1.1.1-1ubuntu2.1~18.04.7)\n- **CVE-2019-1563** (fixed in version 1.1.1-1ubuntu2.1~18.04.6)\n- **CVE-2019-1547** (fixed in version 1.1.1-1ubuntu2.1~18.04.6)\n- **CVE-2019-1543** (fixed in version 1.1.1-1ubuntu2.1~18.04.2)\n",
-            "text": "Component libssl1.1 version 1.1.0g-2ubuntu4.3 has 23 vulnerabilities. Update to version 1.1.1-1ubuntu2.1~18.04.23 or later."
-          },
-          "properties": {
-            "component": "libssl1.1",
-            "cve_ids": [
-              "CVE-2023-0466",
-              "CVE-2023-0465",
-              "CVE-2023-0215",
-              "CVE-2022-4450",
-              "CVE-2023-0464",
-              "CVE-2022-2097",
-              "CVE-2022-2068",
-              "CVE-2022-0778",
-              "CVE-2022-1292",
-              "CVE-2021-3711",
-              "CVE-2021-23840",
-              "CVE-2019-1551",
-              "CVE-2019-1549",
-              "CVE-2023-2650",
-              "CVE-2023-0286",
-              "CVE-2022-4304",
-              "CVE-2021-3712",
-              "CVE-2021-3449",
-              "CVE-2021-23841",
-              "CVE-2020-1971",
-              "CVE-2019-1563",
-              "CVE-2019-1547",
-              "CVE-2019-1543"
-            ],
-            "fix_version": "1.1.1-1ubuntu2.1~18.04.23",
-            "github/alertType": "dependency",
-            "policies": [
-              "ssvc-out-of-cycle-policy",
-              "ssvc-scheduled-policy"
-            ],
-            "version": "1.1.0g-2ubuntu4.3",
-            "vulnerabilities": 23
-          },
-          "ruleId": "vulnerable-component/libssl1_1"
-        },
-        {
-          "fingerprints": {
-            "vulnerawiseFingerprint/v1": "libpam-modules/1.1.8-3.6ubuntu2"
-          },
-          "kind": "fail",
-          "level": "warning",
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "os-pkg/libpam-modules",
-                  "uriBaseId": "%SRCROOT%"
-                },
-                "region": {
-                  "startLine": 1
-                }
-              }
-            }
-          ],
-          "message": {
-            "markdown": "# Component: `libpam-modules`\n\n**Current version:** `1.1.8-3.6ubuntu2`\n\n## Recommendation\nUpdate to version `1.1.8-3.6ubuntu2.18.04.4` or later\n\n---\n\n## Vulnerabilities (1)\n\n- **CVE-2022-28321** (fixed in version 1.1.8-3.6ubuntu2.18.04.4)\n",
-            "text": "Component libpam-modules version 1.1.8-3.6ubuntu2 has 1 vulnerabilities. Update to version 1.1.8-3.6ubuntu2.18.04.4 or later."
-          },
-          "properties": {
-            "component": "libpam-modules",
-            "cve_ids": [
-              "CVE-2022-28321"
-            ],
-            "fix_version": "1.1.8-3.6ubuntu2.18.04.4",
-            "github/alertType": "dependency",
-            "policies": [
-              "ssvc-out-of-cycle-policy"
-            ],
-            "version": "1.1.8-3.6ubuntu2",
-            "vulnerabilities": 1
-          },
-          "ruleId": "vulnerable-component/libpam_modules"
+          "ruleId": "vulnerable-component/libsqlite3_0"
         },
         {
           "fingerprints": {
@@ -1124,247 +998,6 @@
         },
         {
           "fingerprints": {
-            "vulnerawiseFingerprint/v1": "libsystemd0/237-3ubuntu10.13"
-          },
-          "kind": "fail",
-          "level": "warning",
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "os-pkg/libsystemd0",
-                  "uriBaseId": "%SRCROOT%"
-                },
-                "region": {
-                  "startLine": 1
-                }
-              }
-            }
-          ],
-          "message": {
-            "markdown": "# Component: `libsystemd0`\n\n**Current version:** `237-3ubuntu10.13`\n\n## Recommendation\nUpdate to version `237-3ubuntu10.57` or later\n\n---\n\n## Vulnerabilities (10)\n\n- **CVE-2022-2526** (fixed in version 237-3ubuntu10.56)\n- **CVE-2022-3821** (fixed in version 237-3ubuntu10.57)\n- **CVE-2021-33910** (fixed in version 237-3ubuntu10.49)\n- **CVE-2020-13529** (fixed in version 237-3ubuntu10.49)\n- **CVE-2019-20386** (fixed in version 237-3ubuntu10.38)\n- **CVE-2020-1712** (fixed in version 237-3ubuntu10.38)\n- **CVE-2019-15718** (fixed in version 237-3ubuntu10.28)\n- **CVE-2019-3843** (fixed in version 237-3ubuntu10.38)\n- **CVE-2019-3844** (fixed in version 237-3ubuntu10.38)\n- **CVE-2019-3842** (fixed in version 237-3ubuntu10.19)\n",
-            "text": "Component libsystemd0 version 237-3ubuntu10.13 has 10 vulnerabilities. Update to version 237-3ubuntu10.57 or later."
-          },
-          "properties": {
-            "component": "libsystemd0",
-            "cve_ids": [
-              "CVE-2022-2526",
-              "CVE-2022-3821",
-              "CVE-2021-33910",
-              "CVE-2020-13529",
-              "CVE-2019-20386",
-              "CVE-2020-1712",
-              "CVE-2019-15718",
-              "CVE-2019-3843",
-              "CVE-2019-3844",
-              "CVE-2019-3842"
-            ],
-            "fix_version": "237-3ubuntu10.57",
-            "github/alertType": "dependency",
-            "policies": [
-              "ssvc-out-of-cycle-policy",
-              "ssvc-scheduled-policy"
-            ],
-            "version": "237-3ubuntu10.13",
-            "vulnerabilities": 10
-          },
-          "ruleId": "vulnerable-component/libsystemd0"
-        },
-        {
-          "fingerprints": {
-            "vulnerawiseFingerprint/v1": "curl/7.58.0-2ubuntu3.6"
-          },
-          "kind": "fail",
-          "level": "warning",
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "os-pkg/curl",
-                  "uriBaseId": "%SRCROOT%"
-                },
-                "region": {
-                  "startLine": 1
-                }
-              }
-            }
-          ],
-          "message": {
-            "markdown": "# Component: `curl`\n\n**Current version:** `7.58.0-2ubuntu3.6`\n\n## Recommendation\nUpdate to version `7.58.0-2ubuntu3.24` or later\n\n---\n\n## Vulnerabilities (30)\n\n- **CVE-2022-32221** (fixed in version 7.58.0-2ubuntu3.21)\n- **CVE-2022-27781** (fixed in version 7.58.0-2ubuntu3.18)\n- **CVE-2022-27782** (fixed in version 7.58.0-2ubuntu3.18)\n- **CVE-2021-22925** (fixed in version 7.58.0-2ubuntu3.14)\n- **CVE-2021-22946** (fixed in version 7.58.0-2ubuntu3.15)\n- **CVE-2021-22876** (fixed in version 7.58.0-2ubuntu3.13)\n- **CVE-2020-8286** (fixed in version 7.58.0-2ubuntu3.12)\n- **CVE-2020-8285** (fixed in version 7.58.0-2ubuntu3.12)\n- **CVE-2020-8231** (fixed in version 7.58.0-2ubuntu3.10)\n- **CVE-2019-5481** (fixed in version 7.58.0-2ubuntu3.8)\n- **CVE-2019-5482** (fixed in version 7.58.0-2ubuntu3.8)\n- **CVE-2023-27538** (fixed in version 7.58.0-2ubuntu3.24)\n- **CVE-2023-27535** (fixed in version 7.58.0-2ubuntu3.24)\n- **CVE-2023-27534** (fixed in version 7.58.0-2ubuntu3.24)\n- **CVE-2023-27536** (fixed in version 7.58.0-2ubuntu3.24)\n- **CVE-2023-27533** (fixed in version 7.58.0-2ubuntu3.24)\n- **CVE-2022-43552** (fixed in version 7.58.0-2ubuntu3.22)\n- **CVE-2022-35252** (fixed in version 7.58.0-2ubuntu3.20)\n- **CVE-2022-32206** (fixed in version 7.58.0-2ubuntu3.19)\n- **CVE-2023-23916** (fixed in version 7.58.0-2ubuntu3.23)\n- **CVE-2022-22576** (fixed in version 7.58.0-2ubuntu3.17)\n- **CVE-2022-27776** (fixed in version 7.58.0-2ubuntu3.17)\n- **CVE-2022-32208** (fixed in version 7.58.0-2ubuntu3.19)\n- **CVE-2022-27774** (fixed in version 7.58.0-2ubuntu3.17)\n- **CVE-2021-22924** (fixed in version 7.58.0-2ubuntu3.14)\n- **CVE-2021-22947** (fixed in version 7.58.0-2ubuntu3.15)\n- **CVE-2021-22898** (fixed in version 7.58.0-2ubuntu3.14)\n- **CVE-2020-8284** (fixed in version 7.58.0-2ubuntu3.12)\n- **CVE-2020-8177** (fixed in version 7.58.0-2ubuntu3.9)\n- **CVE-2019-5436** (fixed in version 7.58.0-2ubuntu3.7)\n",
-            "text": "Component curl version 7.58.0-2ubuntu3.6 has 30 vulnerabilities. Update to version 7.58.0-2ubuntu3.24 or later."
-          },
-          "properties": {
-            "component": "curl",
-            "cve_ids": [
-              "CVE-2022-32221",
-              "CVE-2022-27781",
-              "CVE-2022-27782",
-              "CVE-2021-22925",
-              "CVE-2021-22946",
-              "CVE-2021-22876",
-              "CVE-2020-8286",
-              "CVE-2020-8285",
-              "CVE-2020-8231",
-              "CVE-2019-5481",
-              "CVE-2019-5482",
-              "CVE-2023-27538",
-              "CVE-2023-27535",
-              "CVE-2023-27534",
-              "CVE-2023-27536",
-              "CVE-2023-27533",
-              "CVE-2022-43552",
-              "CVE-2022-35252",
-              "CVE-2022-32206",
-              "CVE-2023-23916",
-              "CVE-2022-22576",
-              "CVE-2022-27776",
-              "CVE-2022-32208",
-              "CVE-2022-27774",
-              "CVE-2021-22924",
-              "CVE-2021-22947",
-              "CVE-2021-22898",
-              "CVE-2020-8284",
-              "CVE-2020-8177",
-              "CVE-2019-5436"
-            ],
-            "fix_version": "7.58.0-2ubuntu3.24",
-            "github/alertType": "dependency",
-            "policies": [
-              "ssvc-out-of-cycle-policy",
-              "ssvc-scheduled-policy"
-            ],
-            "version": "7.58.0-2ubuntu3.6",
-            "vulnerabilities": 30
-          },
-          "ruleId": "vulnerable-component/curl"
-        },
-        {
-          "fingerprints": {
-            "vulnerawiseFingerprint/v1": "libgcrypt20/1.8.1-4ubuntu1.1"
-          },
-          "kind": "fail",
-          "level": "warning",
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "os-pkg/libgcrypt20",
-                  "uriBaseId": "%SRCROOT%"
-                },
-                "region": {
-                  "startLine": 1
-                }
-              }
-            }
-          ],
-          "message": {
-            "markdown": "# Component: `libgcrypt20`\n\n**Current version:** `1.8.1-4ubuntu1.1`\n\n## Recommendation\nUpdate to version `1.8.1-4ubuntu1.3` or later\n\n---\n\n## Vulnerabilities (3)\n\n- **CVE-2021-33560** (fixed in version 1.8.1-4ubuntu1.3)\n- **CVE-2021-40528** (fixed in version 1.8.1-4ubuntu1.3)\n- **CVE-2019-13627** (fixed in version 1.8.1-4ubuntu1.2)\n",
-            "text": "Component libgcrypt20 version 1.8.1-4ubuntu1.1 has 3 vulnerabilities. Update to version 1.8.1-4ubuntu1.3 or later."
-          },
-          "properties": {
-            "component": "libgcrypt20",
-            "cve_ids": [
-              "CVE-2021-33560",
-              "CVE-2021-40528",
-              "CVE-2019-13627"
-            ],
-            "fix_version": "1.8.1-4ubuntu1.3",
-            "github/alertType": "dependency",
-            "policies": [
-              "ssvc-out-of-cycle-policy",
-              "ssvc-scheduled-policy"
-            ],
-            "version": "1.8.1-4ubuntu1.1",
-            "vulnerabilities": 3
-          },
-          "ruleId": "vulnerable-component/libgcrypt20"
-        },
-        {
-          "fingerprints": {
-            "vulnerawiseFingerprint/v1": "tar/1.29b-2ubuntu0.1"
-          },
-          "kind": "fail",
-          "level": "warning",
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "os-pkg/tar",
-                  "uriBaseId": "%SRCROOT%"
-                },
-                "region": {
-                  "startLine": 1
-                }
-              }
-            }
-          ],
-          "message": {
-            "markdown": "# Component: `tar`\n\n**Current version:** `1.29b-2ubuntu0.1`\n\n## Recommendation\nUpdate to version `1.29b-2ubuntu0.4` or later\n\n---\n\n## Vulnerabilities (4)\n\n- **CVE-2019-9923** (fixed in version 1.29b-2ubuntu0.2)\n- **CVE-2022-48303** (fixed in version 1.29b-2ubuntu0.4)\n- **CVE-2021-20193** (fixed in version 1.29b-2ubuntu0.3)\n- **CVE-2018-20482** (fixed in version 1.29b-2ubuntu0.2)\n",
-            "text": "Component tar version 1.29b-2ubuntu0.1 has 4 vulnerabilities. Update to version 1.29b-2ubuntu0.4 or later."
-          },
-          "properties": {
-            "component": "tar",
-            "cve_ids": [
-              "CVE-2019-9923",
-              "CVE-2022-48303",
-              "CVE-2021-20193",
-              "CVE-2018-20482"
-            ],
-            "fix_version": "1.29b-2ubuntu0.4",
-            "github/alertType": "dependency",
-            "policies": [
-              "ssvc-out-of-cycle-policy",
-              "ssvc-scheduled-policy"
-            ],
-            "version": "1.29b-2ubuntu0.1",
-            "vulnerabilities": 4
-          },
-          "ruleId": "vulnerable-component/tar"
-        },
-        {
-          "fingerprints": {
-            "vulnerawiseFingerprint/v1": "org.apache.logging.log4j:log4j-core/2.14.1"
-          },
-          "kind": "fail",
-          "level": "error",
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "deployments/gateway-1.0-jar-with-dependencies.jar",
-                  "uriBaseId": "%SRCROOT%"
-                },
-                "region": {
-                  "startLine": 1
-                }
-              }
-            }
-          ],
-          "message": {
-            "markdown": "# Component: `org.apache.logging.log4j:log4j-core`\n\n**Current version:** `2.14.1`\n\n## Recommendation\nUpdate to version `2.17.1` or later\n\n---\n\n## Vulnerabilities (4)\n\n- **CVE-2021-45046** (fixed in version 2.16.0, 2.12.2)\n- **CVE-2021-44228** (fixed in version 2.15.0, 2.3.1, 2.12.2)\n- **CVE-2021-45105** (fixed in version 2.12.3, 2.17.0, 2.3.1)\n- **CVE-2021-44832** (fixed in version 2.3.2, 2.12.4, 2.17.1)\n",
-            "text": "Component org.apache.logging.log4j:log4j-core version 2.14.1 has 4 vulnerabilities. Update to version 2.17.1 or later."
-          },
-          "properties": {
-            "component": "org.apache.logging.log4j:log4j-core",
-            "cve_ids": [
-              "CVE-2021-45046",
-              "CVE-2021-44228",
-              "CVE-2021-45105",
-              "CVE-2021-44832"
-            ],
-            "fix_version": "2.17.1",
-            "github/alertType": "dependency",
-            "policies": [
-              "ssvc-immediate-policy",
-              "ssvc-scheduled-policy"
-            ],
-            "version": "2.14.1",
-            "vulnerabilities": 4
-          },
-          "ruleId": "vulnerable-component/org_apache_logging_log4j_log4j_core"
-        },
-        {
-          "fingerprints": {
             "vulnerawiseFingerprint/v1": "libgnutls30/3.5.18-1ubuntu1"
           },
           "kind": "fail",
@@ -1383,7 +1016,7 @@
             }
           ],
           "message": {
-            "markdown": "# Component: `libgnutls30`\n\n**Current version:** `3.5.18-1ubuntu1`\n\n## Recommendation\nUpdate to version `3.5.18-1ubuntu1.6` or later\n\n---\n\n## Vulnerabilities (6)\n\n- **CVE-2022-2509** (fixed in version 3.5.18-1ubuntu1.6)\n- **CVE-2019-3829** (fixed in version 3.5.18-1ubuntu1.1)\n- **CVE-2021-4209** (fixed in version 3.5.18-1ubuntu1.6)\n- **CVE-2018-10845** (fixed in version 3.5.18-1ubuntu1.1)\n- **CVE-2018-10846** (fixed in version 3.5.18-1ubuntu1.1)\n- **CVE-2018-10844** (fixed in version 3.5.18-1ubuntu1.1)\n",
+            "markdown": "# Component: `libgnutls30`\n\n**Current version:** `3.5.18-1ubuntu1`\n\n## Recommendation\nUpdate to version `3.5.18-1ubuntu1.6` or later\n\n---\n\n## Vulnerabilities (6)\n\n- **CVE-2022-2509** (fixed in version 3.5.18-1ubuntu1.6)\n- **CVE-2019-3829** (fixed in version 3.5.18-1ubuntu1.1)\n- **CVE-2021-4209** (fixed in version 3.5.18-1ubuntu1.6)\n- **CVE-2018-10846** (fixed in version 3.5.18-1ubuntu1.1)\n- **CVE-2018-10844** (fixed in version 3.5.18-1ubuntu1.1)\n- **CVE-2018-10845** (fixed in version 3.5.18-1ubuntu1.1)\n",
             "text": "Component libgnutls30 version 3.5.18-1ubuntu1 has 6 vulnerabilities. Update to version 3.5.18-1ubuntu1.6 or later."
           },
           "properties": {
@@ -1392,9 +1025,9 @@
               "CVE-2022-2509",
               "CVE-2019-3829",
               "CVE-2021-4209",
-              "CVE-2018-10845",
               "CVE-2018-10846",
-              "CVE-2018-10844"
+              "CVE-2018-10844",
+              "CVE-2018-10845"
             ],
             "fix_version": "3.5.18-1ubuntu1.6",
             "github/alertType": "dependency",
@@ -1451,7 +1084,7 @@
         },
         {
           "fingerprints": {
-            "vulnerawiseFingerprint/v1": "bzip2/1.0.6-8.1"
+            "vulnerawiseFingerprint/v1": "libpcre3/2:8.39-9"
           },
           "kind": "fail",
           "level": "warning",
@@ -1459,7 +1092,7 @@
             {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "os-pkg/bzip2",
+                  "uri": "os-pkg/libpcre3",
                   "uriBaseId": "%SRCROOT%"
                 },
                 "region": {
@@ -1469,23 +1102,148 @@
             }
           ],
           "message": {
-            "markdown": "# Component: `bzip2`\n\n**Current version:** `1.0.6-8.1`\n\n## Recommendation\nUpdate to version `1.0.6-8.1ubuntu0.2` or later\n\n---\n\n## Vulnerabilities (1)\n\n- **CVE-2019-12900** (fixed in version 1.0.6-8.1ubuntu0.2)\n",
-            "text": "Component bzip2 version 1.0.6-8.1 has 1 vulnerabilities. Update to version 1.0.6-8.1ubuntu0.2 or later."
+            "markdown": "# Component: `libpcre3`\n\n**Current version:** `2:8.39-9`\n\n## Recommendation\nUpdate to version `2:8.39-9ubuntu0.1` or later\n\n---\n\n## Vulnerabilities (2)\n\n- **CVE-2019-20838** (fixed in version 2:8.39-9ubuntu0.1)\n- **CVE-2020-14155** (fixed in version 2:8.39-9ubuntu0.1)\n",
+            "text": "Component libpcre3 version 2:8.39-9 has 2 vulnerabilities. Update to version 2:8.39-9ubuntu0.1 or later."
           },
           "properties": {
-            "component": "bzip2",
+            "component": "libpcre3",
             "cve_ids": [
-              "CVE-2019-12900"
+              "CVE-2019-20838",
+              "CVE-2020-14155"
             ],
-            "fix_version": "1.0.6-8.1ubuntu0.2",
+            "fix_version": "2:8.39-9ubuntu0.1",
             "github/alertType": "dependency",
             "policies": [
               "ssvc-out-of-cycle-policy"
             ],
-            "version": "1.0.6-8.1",
+            "version": "2:8.39-9",
+            "vulnerabilities": 2
+          },
+          "ruleId": "vulnerable-component/libpcre3"
+        },
+        {
+          "fingerprints": {
+            "vulnerawiseFingerprint/v1": "libsystemd0/237-3ubuntu10.13"
+          },
+          "kind": "fail",
+          "level": "warning",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "os-pkg/libsystemd0",
+                  "uriBaseId": "%SRCROOT%"
+                },
+                "region": {
+                  "startLine": 1
+                }
+              }
+            }
+          ],
+          "message": {
+            "markdown": "# Component: `libsystemd0`\n\n**Current version:** `237-3ubuntu10.13`\n\n## Recommendation\nUpdate to version `237-3ubuntu10.57` or later\n\n---\n\n## Vulnerabilities (10)\n\n- **CVE-2022-2526** (fixed in version 237-3ubuntu10.56)\n- **CVE-2022-3821** (fixed in version 237-3ubuntu10.57)\n- **CVE-2020-13529** (fixed in version 237-3ubuntu10.49)\n- **CVE-2021-33910** (fixed in version 237-3ubuntu10.49)\n- **CVE-2020-1712** (fixed in version 237-3ubuntu10.38)\n- **CVE-2019-20386** (fixed in version 237-3ubuntu10.38)\n- **CVE-2019-15718** (fixed in version 237-3ubuntu10.28)\n- **CVE-2019-3844** (fixed in version 237-3ubuntu10.38)\n- **CVE-2019-3843** (fixed in version 237-3ubuntu10.38)\n- **CVE-2019-3842** (fixed in version 237-3ubuntu10.19)\n",
+            "text": "Component libsystemd0 version 237-3ubuntu10.13 has 10 vulnerabilities. Update to version 237-3ubuntu10.57 or later."
+          },
+          "properties": {
+            "component": "libsystemd0",
+            "cve_ids": [
+              "CVE-2022-2526",
+              "CVE-2022-3821",
+              "CVE-2020-13529",
+              "CVE-2021-33910",
+              "CVE-2020-1712",
+              "CVE-2019-20386",
+              "CVE-2019-15718",
+              "CVE-2019-3844",
+              "CVE-2019-3843",
+              "CVE-2019-3842"
+            ],
+            "fix_version": "237-3ubuntu10.57",
+            "github/alertType": "dependency",
+            "policies": [
+              "ssvc-out-of-cycle-policy",
+              "ssvc-scheduled-policy"
+            ],
+            "version": "237-3ubuntu10.13",
+            "vulnerabilities": 10
+          },
+          "ruleId": "vulnerable-component/libsystemd0"
+        },
+        {
+          "fingerprints": {
+            "vulnerawiseFingerprint/v1": "dpkg/1.19.0.5ubuntu2.1"
+          },
+          "kind": "fail",
+          "level": "warning",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "os-pkg/dpkg",
+                  "uriBaseId": "%SRCROOT%"
+                },
+                "region": {
+                  "startLine": 1
+                }
+              }
+            }
+          ],
+          "message": {
+            "markdown": "# Component: `dpkg`\n\n**Current version:** `1.19.0.5ubuntu2.1`\n\n## Recommendation\nUpdate to version `1.19.0.5ubuntu2.4` or later\n\n---\n\n## Vulnerabilities (1)\n\n- **CVE-2022-1664** (fixed in version 1.19.0.5ubuntu2.4)\n",
+            "text": "Component dpkg version 1.19.0.5ubuntu2.1 has 1 vulnerabilities. Update to version 1.19.0.5ubuntu2.4 or later."
+          },
+          "properties": {
+            "component": "dpkg",
+            "cve_ids": [
+              "CVE-2022-1664"
+            ],
+            "fix_version": "1.19.0.5ubuntu2.4",
+            "github/alertType": "dependency",
+            "policies": [
+              "ssvc-out-of-cycle-policy"
+            ],
+            "version": "1.19.0.5ubuntu2.1",
             "vulnerabilities": 1
           },
-          "ruleId": "vulnerable-component/bzip2"
+          "ruleId": "vulnerable-component/dpkg"
+        },
+        {
+          "fingerprints": {
+            "vulnerawiseFingerprint/v1": "gcc-8-base/8.2.0-1ubuntu2~18.04"
+          },
+          "kind": "fail",
+          "level": "warning",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "os-pkg/gcc-8-base",
+                  "uriBaseId": "%SRCROOT%"
+                },
+                "region": {
+                  "startLine": 1
+                }
+              }
+            }
+          ],
+          "message": {
+            "markdown": "# Component: `gcc-8-base`\n\n**Current version:** `8.2.0-1ubuntu2~18.04`\n\n## Recommendation\nUpdate to version `8.3.0-26ubuntu1~18.04` or later\n\n---\n\n## Vulnerabilities (1)\n\n- **CVE-2019-15847** (fixed in version 8.3.0-26ubuntu1~18.04)\n",
+            "text": "Component gcc-8-base version 8.2.0-1ubuntu2~18.04 has 1 vulnerabilities. Update to version 8.3.0-26ubuntu1~18.04 or later."
+          },
+          "properties": {
+            "component": "gcc-8-base",
+            "cve_ids": [
+              "CVE-2019-15847"
+            ],
+            "fix_version": "8.3.0-26ubuntu1~18.04",
+            "github/alertType": "dependency",
+            "policies": [
+              "ssvc-out-of-cycle-policy"
+            ],
+            "version": "8.2.0-1ubuntu2~18.04",
+            "vulnerabilities": 1
+          },
+          "ruleId": "vulnerable-component/gcc_8_base"
         },
         {
           "fingerprints": {
@@ -1527,7 +1285,7 @@
         },
         {
           "fingerprints": {
-            "vulnerawiseFingerprint/v1": "libasn1-8-heimdal/7.5.0+dfsg-1"
+            "vulnerawiseFingerprint/v1": "libssl1.1/1.1.0g-2ubuntu4.3"
           },
           "kind": "fail",
           "level": "warning",
@@ -1535,7 +1293,7 @@
             {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "os-pkg/libasn1-8-heimdal",
+                  "uri": "os-pkg/libssl1.1",
                   "uriBaseId": "%SRCROOT%"
                 },
                 "region": {
@@ -1545,37 +1303,50 @@
             }
           ],
           "message": {
-            "markdown": "# Component: `libasn1-8-heimdal`\n\n**Current version:** `7.5.0+dfsg-1`\n\n## Recommendation\nUpdate to version `7.5.0+dfsg-1ubuntu0.1` or later\n\n---\n\n## Vulnerabilities (10)\n\n- **CVE-2022-3116** (fixed in version 7.5.0+dfsg-1ubuntu0.1)\n- **CVE-2022-45142** (fixed in version 7.5.0+dfsg-1ubuntu0.4)\n- **CVE-2021-44758** (fixed in version 7.5.0+dfsg-1ubuntu0.3)\n- **CVE-2022-41916** (fixed in version 7.5.0+dfsg-1ubuntu0.2)\n- **CVE-2022-44640** (fixed in version 7.5.0+dfsg-1ubuntu0.3)\n- **CVE-2022-3437** (fixed in version 7.5.0+dfsg-1ubuntu0.3)\n- **CVE-2022-42898** (fixed in version 7.5.0+dfsg-1ubuntu0.3)\n- **CVE-2021-3671** (fixed in version 7.5.0+dfsg-1ubuntu0.1)\n- **CVE-2018-16860** (fixed in version 7.5.0+dfsg-1ubuntu0.1)\n- **CVE-2019-12098** (fixed in version 7.5.0+dfsg-1ubuntu0.1)\n",
-            "text": "Component libasn1-8-heimdal version 7.5.0+dfsg-1 has 10 vulnerabilities. Update to version 7.5.0+dfsg-1ubuntu0.1 or later."
+            "markdown": "# Component: `libssl1.1`\n\n**Current version:** `1.1.0g-2ubuntu4.3`\n\n## Recommendation\nUpdate to version `1.1.1-1ubuntu2.1~18.04.23` or later\n\n---\n\n## Vulnerabilities (23)\n\n- **CVE-2023-0465** (fixed in version 1.1.1-1ubuntu2.1~18.04.22)\n- **CVE-2023-0466** (fixed in version 1.1.1-1ubuntu2.1~18.04.22)\n- **CVE-2023-0464** (fixed in version 1.1.1-1ubuntu2.1~18.04.22)\n- **CVE-2022-4450** (fixed in version 1.1.1-1ubuntu2.1~18.04.21)\n- **CVE-2023-0215** (fixed in version 1.1.1-1ubuntu2.1~18.04.21)\n- **CVE-2022-2097** (fixed in version 1.1.1-1ubuntu2.1~18.04.20)\n- **CVE-2022-2068** (fixed in version 1.1.1-1ubuntu2.1~18.04.19)\n- **CVE-2022-1292** (fixed in version 1.1.1-1ubuntu2.1~18.04.17)\n- **CVE-2022-0778** (fixed in version 1.1.1-1ubuntu2.1~18.04.15)\n- **CVE-2021-3711** (fixed in version 1.1.1-1ubuntu2.1~18.04.13)\n- **CVE-2021-23840** (fixed in version 1.1.1-1ubuntu2.1~18.04.8)\n- **CVE-2019-1551** (fixed in version 1.1.1-1ubuntu2.1~18.04.6)\n- **CVE-2019-1549** (fixed in version 1.1.1-1ubuntu2.1~18.04.6)\n- **CVE-2023-2650** (fixed in version 1.1.1-1ubuntu2.1~18.04.23)\n- **CVE-2023-0286** (fixed in version 1.1.1-1ubuntu2.1~18.04.21)\n- **CVE-2022-4304** (fixed in version 1.1.1-1ubuntu2.1~18.04.21)\n- **CVE-2021-3712** (fixed in version 1.1.1-1ubuntu2.1~18.04.13)\n- **CVE-2021-3449** (fixed in version 1.1.1-1ubuntu2.1~18.04.9)\n- **CVE-2021-23841** (fixed in version 1.1.1-1ubuntu2.1~18.04.8)\n- **CVE-2020-1971** (fixed in version 1.1.1-1ubuntu2.1~18.04.7)\n- **CVE-2019-1547** (fixed in version 1.1.1-1ubuntu2.1~18.04.6)\n- **CVE-2019-1563** (fixed in version 1.1.1-1ubuntu2.1~18.04.6)\n- **CVE-2019-1543** (fixed in version 1.1.1-1ubuntu2.1~18.04.2)\n",
+            "text": "Component libssl1.1 version 1.1.0g-2ubuntu4.3 has 23 vulnerabilities. Update to version 1.1.1-1ubuntu2.1~18.04.23 or later."
           },
           "properties": {
-            "component": "libasn1-8-heimdal",
+            "component": "libssl1.1",
             "cve_ids": [
-              "CVE-2022-3116",
-              "CVE-2022-45142",
-              "CVE-2021-44758",
-              "CVE-2022-41916",
-              "CVE-2022-44640",
-              "CVE-2022-3437",
-              "CVE-2022-42898",
-              "CVE-2021-3671",
-              "CVE-2018-16860",
-              "CVE-2019-12098"
+              "CVE-2023-0465",
+              "CVE-2023-0466",
+              "CVE-2023-0464",
+              "CVE-2022-4450",
+              "CVE-2023-0215",
+              "CVE-2022-2097",
+              "CVE-2022-2068",
+              "CVE-2022-1292",
+              "CVE-2022-0778",
+              "CVE-2021-3711",
+              "CVE-2021-23840",
+              "CVE-2019-1551",
+              "CVE-2019-1549",
+              "CVE-2023-2650",
+              "CVE-2023-0286",
+              "CVE-2022-4304",
+              "CVE-2021-3712",
+              "CVE-2021-3449",
+              "CVE-2021-23841",
+              "CVE-2020-1971",
+              "CVE-2019-1547",
+              "CVE-2019-1563",
+              "CVE-2019-1543"
             ],
-            "fix_version": "7.5.0+dfsg-1ubuntu0.1",
+            "fix_version": "1.1.1-1ubuntu2.1~18.04.23",
             "github/alertType": "dependency",
             "policies": [
               "ssvc-out-of-cycle-policy",
               "ssvc-scheduled-policy"
             ],
-            "version": "7.5.0+dfsg-1",
-            "vulnerabilities": 10
+            "version": "1.1.0g-2ubuntu4.3",
+            "vulnerabilities": 23
           },
-          "ruleId": "vulnerable-component/libasn1_8_heimdal"
+          "ruleId": "vulnerable-component/libssl1_1"
         },
         {
           "fingerprints": {
-            "vulnerawiseFingerprint/v1": "libsqlite3-0/3.22.0-1"
+            "vulnerawiseFingerprint/v1": "libsasl2-2/2.1.27~101-g0780600+dfsg-3ubuntu2"
           },
           "kind": "fail",
           "level": "warning",
@@ -1583,7 +1354,7 @@
             {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "os-pkg/libsqlite3-0",
+                  "uri": "os-pkg/libsasl2-2",
                   "uriBaseId": "%SRCROOT%"
                 },
                 "region": {
@@ -1593,48 +1364,277 @@
             }
           ],
           "message": {
-            "markdown": "# Component: `libsqlite3-0`\n\n**Current version:** `3.22.0-1`\n\n## Recommendation\nUpdate to version `3.22.0-1ubuntu0.7` or later\n\n---\n\n## Vulnerabilities (25)\n\n- **CVE-2020-35525** (fixed in version 3.22.0-1ubuntu0.6)\n- **CVE-2022-35737** (fixed in version 3.22.0-1ubuntu0.7)\n- **CVE-2021-36690** (fixed in version 3.22.0-1ubuntu0.5)\n- **CVE-2019-19959** (fixed in version 3.22.0-1ubuntu0.3)\n- **CVE-2020-9327** (fixed in version 3.22.0-1ubuntu0.3)\n- **CVE-2019-19925** (fixed in version 3.22.0-1ubuntu0.3)\n- **CVE-2019-19926** (fixed in version 3.22.0-1ubuntu0.3)\n- **CVE-2019-19923** (fixed in version 3.22.0-1ubuntu0.3)\n- **CVE-2019-20218** (fixed in version 3.22.0-1ubuntu0.3)\n- **CVE-2019-9937** (fixed in version 3.22.0-1ubuntu0.1)\n- **CVE-2019-9936** (fixed in version 3.22.0-1ubuntu0.1)\n- **CVE-2018-20505** (fixed in version 3.22.0-1ubuntu0.1)\n- **CVE-2018-8740** (fixed in version 3.22.0-1ubuntu0.4)\n- **CVE-2020-13632** (fixed in version 3.22.0-1ubuntu0.4)\n- **CVE-2020-13630** (fixed in version 3.22.0-1ubuntu0.4)\n- **CVE-2020-13434** (fixed in version 3.22.0-1ubuntu0.4)\n- **CVE-2019-13753** (fixed in version 3.22.0-1ubuntu0.3)\n- **CVE-2019-13752** (fixed in version 3.22.0-1ubuntu0.3)\n- **CVE-2019-13734** (fixed in version 3.22.0-1ubuntu0.3)\n- **CVE-2019-13751** (fixed in version 3.22.0-1ubuntu0.3)\n- **CVE-2019-13750** (fixed in version 3.22.0-1ubuntu0.3)\n- **CVE-2019-16168** (fixed in version 3.22.0-1ubuntu0.2)\n- **CVE-2019-5827** (fixed in version 3.22.0-1ubuntu0.2)\n- **CVE-2018-20506** (fixed in version 3.22.0-1ubuntu0.1)\n- **CVE-2018-20346** (fixed in version 3.22.0-1ubuntu0.1)\n",
-            "text": "Component libsqlite3-0 version 3.22.0-1 has 25 vulnerabilities. Update to version 3.22.0-1ubuntu0.7 or later."
+            "markdown": "# Component: `libsasl2-2`\n\n**Current version:** `2.1.27~101-g0780600+dfsg-3ubuntu2`\n\n## Recommendation\nUpdate to version `2.1.27~101-g0780600+dfsg-3ubuntu2.4` or later\n\n---\n\n## Vulnerabilities (2)\n\n- **CVE-2019-19906** (fixed in version 2.1.27~101-g0780600+dfsg-3ubuntu2.1)\n- **CVE-2022-24407** (fixed in version 2.1.27~101-g0780600+dfsg-3ubuntu2.4)\n",
+            "text": "Component libsasl2-2 version 2.1.27~101-g0780600+dfsg-3ubuntu2 has 2 vulnerabilities. Update to version 2.1.27~101-g0780600+dfsg-3ubuntu2.4 or later."
           },
           "properties": {
-            "component": "libsqlite3-0",
+            "component": "libsasl2-2",
             "cve_ids": [
-              "CVE-2020-35525",
-              "CVE-2022-35737",
-              "CVE-2021-36690",
-              "CVE-2019-19959",
-              "CVE-2020-9327",
-              "CVE-2019-19925",
-              "CVE-2019-19926",
-              "CVE-2019-19923",
-              "CVE-2019-20218",
-              "CVE-2019-9937",
-              "CVE-2019-9936",
-              "CVE-2018-20505",
-              "CVE-2018-8740",
-              "CVE-2020-13632",
-              "CVE-2020-13630",
-              "CVE-2020-13434",
-              "CVE-2019-13753",
-              "CVE-2019-13752",
-              "CVE-2019-13734",
-              "CVE-2019-13751",
-              "CVE-2019-13750",
-              "CVE-2019-16168",
-              "CVE-2019-5827",
-              "CVE-2018-20506",
-              "CVE-2018-20346"
+              "CVE-2019-19906",
+              "CVE-2022-24407"
             ],
-            "fix_version": "3.22.0-1ubuntu0.7",
+            "fix_version": "2.1.27~101-g0780600+dfsg-3ubuntu2.4",
             "github/alertType": "dependency",
             "policies": [
               "ssvc-out-of-cycle-policy",
               "ssvc-scheduled-policy"
             ],
-            "version": "3.22.0-1",
-            "vulnerabilities": 25
+            "version": "2.1.27~101-g0780600+dfsg-3ubuntu2",
+            "vulnerabilities": 2
           },
-          "ruleId": "vulnerable-component/libsqlite3_0"
+          "ruleId": "vulnerable-component/libsasl2_2"
+        },
+        {
+          "fingerprints": {
+            "vulnerawiseFingerprint/v1": "gpgv/2.2.4-1ubuntu1.2"
+          },
+          "kind": "fail",
+          "level": "warning",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "os-pkg/gpgv",
+                  "uriBaseId": "%SRCROOT%"
+                },
+                "region": {
+                  "startLine": 1
+                }
+              }
+            }
+          ],
+          "message": {
+            "markdown": "# Component: `gpgv`\n\n**Current version:** `2.2.4-1ubuntu1.2`\n\n## Recommendation\nUpdate to version `2.2.4-1ubuntu1.6` or later\n\n---\n\n## Vulnerabilities (3)\n\n- **CVE-2019-14855** (fixed in version 2.2.4-1ubuntu1.3)\n- **CVE-2019-13050** (fixed in version 2.2.4-1ubuntu1.5)\n- **CVE-2022-34903** (fixed in version 2.2.4-1ubuntu1.6)\n",
+            "text": "Component gpgv version 2.2.4-1ubuntu1.2 has 3 vulnerabilities. Update to version 2.2.4-1ubuntu1.6 or later."
+          },
+          "properties": {
+            "component": "gpgv",
+            "cve_ids": [
+              "CVE-2019-14855",
+              "CVE-2019-13050",
+              "CVE-2022-34903"
+            ],
+            "fix_version": "2.2.4-1ubuntu1.6",
+            "github/alertType": "dependency",
+            "policies": [
+              "ssvc-out-of-cycle-policy",
+              "ssvc-scheduled-policy"
+            ],
+            "version": "2.2.4-1ubuntu1.2",
+            "vulnerabilities": 3
+          },
+          "ruleId": "vulnerable-component/gpgv"
+        },
+        {
+          "fingerprints": {
+            "vulnerawiseFingerprint/v1": "bzip2/1.0.6-8.1"
+          },
+          "kind": "fail",
+          "level": "warning",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "os-pkg/bzip2",
+                  "uriBaseId": "%SRCROOT%"
+                },
+                "region": {
+                  "startLine": 1
+                }
+              }
+            }
+          ],
+          "message": {
+            "markdown": "# Component: `bzip2`\n\n**Current version:** `1.0.6-8.1`\n\n## Recommendation\nUpdate to version `1.0.6-8.1ubuntu0.2` or later\n\n---\n\n## Vulnerabilities (1)\n\n- **CVE-2019-12900** (fixed in version 1.0.6-8.1ubuntu0.2)\n",
+            "text": "Component bzip2 version 1.0.6-8.1 has 1 vulnerabilities. Update to version 1.0.6-8.1ubuntu0.2 or later."
+          },
+          "properties": {
+            "component": "bzip2",
+            "cve_ids": [
+              "CVE-2019-12900"
+            ],
+            "fix_version": "1.0.6-8.1ubuntu0.2",
+            "github/alertType": "dependency",
+            "policies": [
+              "ssvc-out-of-cycle-policy"
+            ],
+            "version": "1.0.6-8.1",
+            "vulnerabilities": 1
+          },
+          "ruleId": "vulnerable-component/bzip2"
+        },
+        {
+          "fingerprints": {
+            "vulnerawiseFingerprint/v1": "bsdutils/1:2.31.1-0.4ubuntu3.3"
+          },
+          "kind": "fail",
+          "level": "warning",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "os-pkg/bsdutils",
+                  "uriBaseId": "%SRCROOT%"
+                },
+                "region": {
+                  "startLine": 1
+                }
+              }
+            }
+          ],
+          "message": {
+            "markdown": "# Component: `bsdutils`\n\n**Current version:** `1:2.31.1-0.4ubuntu3.3`\n\n## Recommendation\nUpdate to version `2.31.1-0.4ubuntu3.7` or later\n\n---\n\n## Vulnerabilities (1)\n\n- **CVE-2018-7738** (fixed in version 2.31.1-0.4ubuntu3.7)\n",
+            "text": "Component bsdutils version 1:2.31.1-0.4ubuntu3.3 has 1 vulnerabilities. Update to version 2.31.1-0.4ubuntu3.7 or later."
+          },
+          "properties": {
+            "component": "bsdutils",
+            "cve_ids": [
+              "CVE-2018-7738"
+            ],
+            "fix_version": "2.31.1-0.4ubuntu3.7",
+            "github/alertType": "dependency",
+            "policies": [
+              "ssvc-scheduled-policy"
+            ],
+            "version": "1:2.31.1-0.4ubuntu3.3",
+            "vulnerabilities": 1
+          },
+          "ruleId": "vulnerable-component/bsdutils"
+        },
+        {
+          "fingerprints": {
+            "vulnerawiseFingerprint/v1": "libc-bin/2.27-3ubuntu1"
+          },
+          "kind": "fail",
+          "level": "warning",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "os-pkg/libc-bin",
+                  "uriBaseId": "%SRCROOT%"
+                },
+                "region": {
+                  "startLine": 1
+                }
+              }
+            }
+          ],
+          "message": {
+            "markdown": "# Component: `libc-bin`\n\n**Current version:** `2.27-3ubuntu1`\n\n## Recommendation\nUpdate to version `2.27-3ubuntu1.5` or later\n\n---\n\n## Vulnerabilities (18)\n\n- **CVE-2022-23219** (fixed in version 2.27-3ubuntu1.5)\n- **CVE-2022-23218** (fixed in version 2.27-3ubuntu1.5)\n- **CVE-2021-35942** (fixed in version 2.27-3ubuntu1.5)\n- **CVE-2021-3326** (fixed in version 2.27-3ubuntu1.5)\n- **CVE-2019-9169** (fixed in version 2.27-3ubuntu1.2)\n- **CVE-2018-19591** (fixed in version 2.27-3ubuntu1.2)\n- **CVE-2018-11236** (fixed in version 2.27-3ubuntu1.2)\n- **CVE-2021-3999** (fixed in version 2.27-3ubuntu1.5)\n- **CVE-2020-27618** (fixed in version 2.27-3ubuntu1.5)\n- **CVE-2019-25013** (fixed in version 2.27-3ubuntu1.5)\n- **CVE-2020-29562** (fixed in version 2.27-3ubuntu1.5)\n- **CVE-2020-1751** (fixed in version 2.27-3ubuntu1.2)\n- **CVE-2020-6096** (fixed in version 2.27-3ubuntu1.5)\n- **CVE-2020-1752** (fixed in version 2.27-3ubuntu1.2)\n- **CVE-2020-10029** (fixed in version 2.27-3ubuntu1.2)\n- **CVE-2019-19126** (fixed in version 2.27-3ubuntu1.2)\n- **CVE-2018-11237** (fixed in version 2.27-3ubuntu1.2)\n- **CVE-2016-10228** (fixed in version 2.27-3ubuntu1.5)\n",
+            "text": "Component libc-bin version 2.27-3ubuntu1 has 18 vulnerabilities. Update to version 2.27-3ubuntu1.5 or later."
+          },
+          "properties": {
+            "component": "libc-bin",
+            "cve_ids": [
+              "CVE-2022-23219",
+              "CVE-2022-23218",
+              "CVE-2021-35942",
+              "CVE-2021-3326",
+              "CVE-2019-9169",
+              "CVE-2018-19591",
+              "CVE-2018-11236",
+              "CVE-2021-3999",
+              "CVE-2020-27618",
+              "CVE-2019-25013",
+              "CVE-2020-29562",
+              "CVE-2020-1751",
+              "CVE-2020-6096",
+              "CVE-2020-1752",
+              "CVE-2020-10029",
+              "CVE-2019-19126",
+              "CVE-2018-11237",
+              "CVE-2016-10228"
+            ],
+            "fix_version": "2.27-3ubuntu1.5",
+            "github/alertType": "dependency",
+            "policies": [
+              "ssvc-out-of-cycle-policy",
+              "ssvc-scheduled-policy"
+            ],
+            "version": "2.27-3ubuntu1",
+            "vulnerabilities": 18
+          },
+          "ruleId": "vulnerable-component/libc_bin"
+        },
+        {
+          "fingerprints": {
+            "vulnerawiseFingerprint/v1": "libp11-kit0/0.23.9-2"
+          },
+          "kind": "fail",
+          "level": "warning",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "os-pkg/libp11-kit0",
+                  "uriBaseId": "%SRCROOT%"
+                },
+                "region": {
+                  "startLine": 1
+                }
+              }
+            }
+          ],
+          "message": {
+            "markdown": "# Component: `libp11-kit0`\n\n**Current version:** `0.23.9-2`\n\n## Recommendation\nUpdate to version `0.23.9-2ubuntu0.1` or later\n\n---\n\n## Vulnerabilities (3)\n\n- **CVE-2020-29363** (fixed in version 0.23.9-2ubuntu0.1)\n- **CVE-2020-29362** (fixed in version 0.23.9-2ubuntu0.1)\n- **CVE-2020-29361** (fixed in version 0.23.9-2ubuntu0.1)\n",
+            "text": "Component libp11-kit0 version 0.23.9-2 has 3 vulnerabilities. Update to version 0.23.9-2ubuntu0.1 or later."
+          },
+          "properties": {
+            "component": "libp11-kit0",
+            "cve_ids": [
+              "CVE-2020-29363",
+              "CVE-2020-29362",
+              "CVE-2020-29361"
+            ],
+            "fix_version": "0.23.9-2ubuntu0.1",
+            "github/alertType": "dependency",
+            "policies": [
+              "ssvc-out-of-cycle-policy"
+            ],
+            "version": "0.23.9-2",
+            "vulnerabilities": 3
+          },
+          "ruleId": "vulnerable-component/libp11_kit0"
+        },
+        {
+          "fingerprints": {
+            "vulnerawiseFingerprint/v1": "libidn2-0/2.0.4-1.1build2"
+          },
+          "kind": "fail",
+          "level": "warning",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "os-pkg/libidn2-0",
+                  "uriBaseId": "%SRCROOT%"
+                },
+                "region": {
+                  "startLine": 1
+                }
+              }
+            }
+          ],
+          "message": {
+            "markdown": "# Component: `libidn2-0`\n\n**Current version:** `2.0.4-1.1build2`\n\n## Recommendation\nUpdate to version `2.0.4-1.1ubuntu0.2` or later\n\n---\n\n## Vulnerabilities (2)\n\n- **CVE-2019-12290** (fixed in version 2.0.4-1.1ubuntu0.2)\n- **CVE-2019-18224** (fixed in version 2.0.4-1.1ubuntu0.2)\n",
+            "text": "Component libidn2-0 version 2.0.4-1.1build2 has 2 vulnerabilities. Update to version 2.0.4-1.1ubuntu0.2 or later."
+          },
+          "properties": {
+            "component": "libidn2-0",
+            "cve_ids": [
+              "CVE-2019-12290",
+              "CVE-2019-18224"
+            ],
+            "fix_version": "2.0.4-1.1ubuntu0.2",
+            "github/alertType": "dependency",
+            "policies": [
+              "ssvc-out-of-cycle-policy"
+            ],
+            "version": "2.0.4-1.1build2",
+            "vulnerabilities": 2
+          },
+          "ruleId": "vulnerable-component/libidn2_0"
         }
       ],
       "tool": {
@@ -1648,15 +1648,15 @@
                 "level": "warning"
               },
               "fullDescription": {
-                "markdown": "## Vulnerable Component: liblz4-1\n\nThis component has security vulnerabilities that require remediation.",
-                "text": "Component liblz4-1 has security vulnerabilities that require remediation"
+                "markdown": "## Vulnerable Component: libseccomp2\n\nThis component has security vulnerabilities that require remediation.",
+                "text": "Component libseccomp2 has security vulnerabilities that require remediation"
               },
               "help": {
-                "markdown": "## Remediation\n\nUpdate component `liblz4-1` from version `0.0~r131-2ubuntu3` to the `0.0~r131-2ubuntu3.1` or latest secure version to resolve security vulnerabilities.",
-                "text": "Update component liblz4-1 to resolve security issues"
+                "markdown": "## Remediation\n\nUpdate component `libseccomp2` from version `2.3.1-2.1ubuntu4` to the `2.4.1-0ubuntu0.18.04.2` or latest secure version to resolve security vulnerabilities.",
+                "text": "Update component libseccomp2 to resolve security issues"
               },
-              "id": "vulnerable-component/liblz4_1",
-              "name": "Vulnerable Component: liblz4-1",
+              "id": "vulnerable-component/libseccomp2",
+              "name": "Vulnerable Component: libseccomp2",
               "properties": {
                 "precision": "high",
                 "tags": [
@@ -1666,7 +1666,7 @@
                 ]
               },
               "shortDescription": {
-                "text": "Security vulnerabilities in component liblz4-1"
+                "text": "Security vulnerabilities in component libseccomp2"
               }
             },
             {
@@ -1674,15 +1674,15 @@
                 "level": "warning"
               },
               "fullDescription": {
-                "markdown": "## Vulnerable Component: libpcre3\n\nThis component has security vulnerabilities that require remediation.",
-                "text": "Component libpcre3 has security vulnerabilities that require remediation"
+                "markdown": "## Vulnerable Component: gzip\n\nThis component has security vulnerabilities that require remediation.",
+                "text": "Component gzip has security vulnerabilities that require remediation"
               },
               "help": {
-                "markdown": "## Remediation\n\nUpdate component `libpcre3` from version `2:8.39-9` to the `2:8.39-9ubuntu0.1` or latest secure version to resolve security vulnerabilities.",
-                "text": "Update component libpcre3 to resolve security issues"
+                "markdown": "## Remediation\n\nUpdate component `gzip` from version `1.6-5ubuntu1` to the `1.6-5ubuntu1.2` or latest secure version to resolve security vulnerabilities.",
+                "text": "Update component gzip to resolve security issues"
               },
-              "id": "vulnerable-component/libpcre3",
-              "name": "Vulnerable Component: libpcre3",
+              "id": "vulnerable-component/gzip",
+              "name": "Vulnerable Component: gzip",
               "properties": {
                 "precision": "high",
                 "tags": [
@@ -1692,7 +1692,7 @@
                 ]
               },
               "shortDescription": {
-                "text": "Security vulnerabilities in component libpcre3"
+                "text": "Security vulnerabilities in component gzip"
               }
             },
             {
@@ -1700,15 +1700,15 @@
                 "level": "warning"
               },
               "fullDescription": {
-                "markdown": "## Vulnerable Component: libsasl2-2\n\nThis component has security vulnerabilities that require remediation.",
-                "text": "Component libsasl2-2 has security vulnerabilities that require remediation"
+                "markdown": "## Vulnerable Component: e2fsprogs\n\nThis component has security vulnerabilities that require remediation.",
+                "text": "Component e2fsprogs has security vulnerabilities that require remediation"
               },
               "help": {
-                "markdown": "## Remediation\n\nUpdate component `libsasl2-2` from version `2.1.27~101-g0780600+dfsg-3ubuntu2` to the `2.1.27~101-g0780600+dfsg-3ubuntu2.4` or latest secure version to resolve security vulnerabilities.",
-                "text": "Update component libsasl2-2 to resolve security issues"
+                "markdown": "## Remediation\n\nUpdate component `e2fsprogs` from version `1.44.1-1ubuntu1.1` to the `1.44.1-1ubuntu1.4` or latest secure version to resolve security vulnerabilities.",
+                "text": "Update component e2fsprogs to resolve security issues"
               },
-              "id": "vulnerable-component/libsasl2_2",
-              "name": "Vulnerable Component: libsasl2-2",
+              "id": "vulnerable-component/e2fsprogs",
+              "name": "Vulnerable Component: e2fsprogs",
               "properties": {
                 "precision": "high",
                 "tags": [
@@ -1718,7 +1718,7 @@
                 ]
               },
               "shortDescription": {
-                "text": "Security vulnerabilities in component libsasl2-2"
+                "text": "Security vulnerabilities in component e2fsprogs"
               }
             },
             {
@@ -1726,15 +1726,15 @@
                 "level": "warning"
               },
               "fullDescription": {
-                "markdown": "## Vulnerable Component: login\n\nThis component has security vulnerabilities that require remediation.",
-                "text": "Component login has security vulnerabilities that require remediation"
+                "markdown": "## Vulnerable Component: libsepol1\n\nThis component has security vulnerabilities that require remediation.",
+                "text": "Component libsepol1 has security vulnerabilities that require remediation"
               },
               "help": {
-                "markdown": "## Remediation\n\nUpdate component `login` from version `1:4.5-1ubuntu1` to the `1:4.5-1ubuntu2.2` or latest secure version to resolve security vulnerabilities.",
-                "text": "Update component login to resolve security issues"
+                "markdown": "## Remediation\n\nUpdate component `libsepol1` from version `2.7-1` to the `2.7-1ubuntu0.1` or latest secure version to resolve security vulnerabilities.",
+                "text": "Update component libsepol1 to resolve security issues"
               },
-              "id": "vulnerable-component/login",
-              "name": "Vulnerable Component: login",
+              "id": "vulnerable-component/libsepol1",
+              "name": "Vulnerable Component: libsepol1",
               "properties": {
                 "precision": "high",
                 "tags": [
@@ -1744,7 +1744,7 @@
                 ]
               },
               "shortDescription": {
-                "text": "Security vulnerabilities in component login"
+                "text": "Security vulnerabilities in component libsepol1"
               }
             },
             {
@@ -1752,15 +1752,15 @@
                 "level": "warning"
               },
               "fullDescription": {
-                "markdown": "## Vulnerable Component: libzstd1\n\nThis component has security vulnerabilities that require remediation.",
-                "text": "Component libzstd1 has security vulnerabilities that require remediation"
+                "markdown": "## Vulnerable Component: libgcrypt20\n\nThis component has security vulnerabilities that require remediation.",
+                "text": "Component libgcrypt20 has security vulnerabilities that require remediation"
               },
               "help": {
-                "markdown": "## Remediation\n\nUpdate component `libzstd1` from version `1.3.3+dfsg-2ubuntu1` to the `1.3.3+dfsg-2ubuntu1.2` or latest secure version to resolve security vulnerabilities.",
-                "text": "Update component libzstd1 to resolve security issues"
+                "markdown": "## Remediation\n\nUpdate component `libgcrypt20` from version `1.8.1-4ubuntu1.1` to the `1.8.1-4ubuntu1.3` or latest secure version to resolve security vulnerabilities.",
+                "text": "Update component libgcrypt20 to resolve security issues"
               },
-              "id": "vulnerable-component/libzstd1",
-              "name": "Vulnerable Component: libzstd1",
+              "id": "vulnerable-component/libgcrypt20",
+              "name": "Vulnerable Component: libgcrypt20",
               "properties": {
                 "precision": "high",
                 "tags": [
@@ -1770,7 +1770,85 @@
                 ]
               },
               "shortDescription": {
-                "text": "Security vulnerabilities in component libzstd1"
+                "text": "Security vulnerabilities in component libgcrypt20"
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "level": "error"
+              },
+              "fullDescription": {
+                "markdown": "## Vulnerable Component: org.apache.logging.log4j:log4j-core\n\nThis component has security vulnerabilities that require remediation.",
+                "text": "Component org.apache.logging.log4j:log4j-core has security vulnerabilities that require remediation"
+              },
+              "help": {
+                "markdown": "## Remediation\n\nUpdate component `org.apache.logging.log4j:log4j-core` from version `2.14.1` to the `2.17.1` or latest secure version to resolve security vulnerabilities.",
+                "text": "Update component org.apache.logging.log4j:log4j-core to resolve security issues"
+              },
+              "id": "vulnerable-component/org_apache_logging_log4j_log4j_core",
+              "name": "Vulnerable Component: org.apache.logging.log4j:log4j-core",
+              "properties": {
+                "precision": "high",
+                "tags": [
+                  "security",
+                  "vulnerability",
+                  "component"
+                ]
+              },
+              "shortDescription": {
+                "text": "Security vulnerabilities in component org.apache.logging.log4j:log4j-core"
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "level": "warning"
+              },
+              "fullDescription": {
+                "markdown": "## Vulnerable Component: libasn1-8-heimdal\n\nThis component has security vulnerabilities that require remediation.",
+                "text": "Component libasn1-8-heimdal has security vulnerabilities that require remediation"
+              },
+              "help": {
+                "markdown": "## Remediation\n\nUpdate component `libasn1-8-heimdal` from version `7.5.0+dfsg-1` to the `7.5.0+dfsg-1ubuntu0.1` or latest secure version to resolve security vulnerabilities.",
+                "text": "Update component libasn1-8-heimdal to resolve security issues"
+              },
+              "id": "vulnerable-component/libasn1_8_heimdal",
+              "name": "Vulnerable Component: libasn1-8-heimdal",
+              "properties": {
+                "precision": "high",
+                "tags": [
+                  "security",
+                  "vulnerability",
+                  "component"
+                ]
+              },
+              "shortDescription": {
+                "text": "Security vulnerabilities in component libasn1-8-heimdal"
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "level": "warning"
+              },
+              "fullDescription": {
+                "markdown": "## Vulnerable Component: libldap-2.4-2\n\nThis component has security vulnerabilities that require remediation.",
+                "text": "Component libldap-2.4-2 has security vulnerabilities that require remediation"
+              },
+              "help": {
+                "markdown": "## Remediation\n\nUpdate component `libldap-2.4-2` from version `2.4.45+dfsg-1ubuntu1.1` to the `2.4.45+dfsg-1ubuntu1.11` or latest secure version to resolve security vulnerabilities.",
+                "text": "Update component libldap-2.4-2 to resolve security issues"
+              },
+              "id": "vulnerable-component/libldap_2_4_2",
+              "name": "Vulnerable Component: libldap-2.4-2",
+              "properties": {
+                "precision": "high",
+                "tags": [
+                  "security",
+                  "vulnerability",
+                  "component"
+                ]
+              },
+              "shortDescription": {
+                "text": "Security vulnerabilities in component libldap-2.4-2"
               }
             },
             {
@@ -1804,15 +1882,15 @@
                 "level": "warning"
               },
               "fullDescription": {
-                "markdown": "## Vulnerable Component: libhogweed4\n\nThis component has security vulnerabilities that require remediation.",
-                "text": "Component libhogweed4 has security vulnerabilities that require remediation"
+                "markdown": "## Vulnerable Component: libzstd1\n\nThis component has security vulnerabilities that require remediation.",
+                "text": "Component libzstd1 has security vulnerabilities that require remediation"
               },
               "help": {
-                "markdown": "## Remediation\n\nUpdate component `libhogweed4` from version `3.4-1` to the `3.4.1-0ubuntu0.18.04.1` or latest secure version to resolve security vulnerabilities.",
-                "text": "Update component libhogweed4 to resolve security issues"
+                "markdown": "## Remediation\n\nUpdate component `libzstd1` from version `1.3.3+dfsg-2ubuntu1` to the `1.3.3+dfsg-2ubuntu1.2` or latest secure version to resolve security vulnerabilities.",
+                "text": "Update component libzstd1 to resolve security issues"
               },
-              "id": "vulnerable-component/libhogweed4",
-              "name": "Vulnerable Component: libhogweed4",
+              "id": "vulnerable-component/libzstd1",
+              "name": "Vulnerable Component: libzstd1",
               "properties": {
                 "precision": "high",
                 "tags": [
@@ -1822,7 +1900,85 @@
                 ]
               },
               "shortDescription": {
-                "text": "Security vulnerabilities in component libhogweed4"
+                "text": "Security vulnerabilities in component libzstd1"
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "level": "warning"
+              },
+              "fullDescription": {
+                "markdown": "## Vulnerable Component: curl\n\nThis component has security vulnerabilities that require remediation.",
+                "text": "Component curl has security vulnerabilities that require remediation"
+              },
+              "help": {
+                "markdown": "## Remediation\n\nUpdate component `curl` from version `7.58.0-2ubuntu3.6` to the `7.58.0-2ubuntu3.24` or latest secure version to resolve security vulnerabilities.",
+                "text": "Update component curl to resolve security issues"
+              },
+              "id": "vulnerable-component/curl",
+              "name": "Vulnerable Component: curl",
+              "properties": {
+                "precision": "high",
+                "tags": [
+                  "security",
+                  "vulnerability",
+                  "component"
+                ]
+              },
+              "shortDescription": {
+                "text": "Security vulnerabilities in component curl"
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "level": "warning"
+              },
+              "fullDescription": {
+                "markdown": "## Vulnerable Component: zlib1g\n\nThis component has security vulnerabilities that require remediation.",
+                "text": "Component zlib1g has security vulnerabilities that require remediation"
+              },
+              "help": {
+                "markdown": "## Remediation\n\nUpdate component `zlib1g` from version `1:1.2.11.dfsg-0ubuntu2` to the `1:1.2.11.dfsg-0ubuntu2.2` or latest secure version to resolve security vulnerabilities.",
+                "text": "Update component zlib1g to resolve security issues"
+              },
+              "id": "vulnerable-component/zlib1g",
+              "name": "Vulnerable Component: zlib1g",
+              "properties": {
+                "precision": "high",
+                "tags": [
+                  "security",
+                  "vulnerability",
+                  "component"
+                ]
+              },
+              "shortDescription": {
+                "text": "Security vulnerabilities in component zlib1g"
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "level": "warning"
+              },
+              "fullDescription": {
+                "markdown": "## Vulnerable Component: liblz4-1\n\nThis component has security vulnerabilities that require remediation.",
+                "text": "Component liblz4-1 has security vulnerabilities that require remediation"
+              },
+              "help": {
+                "markdown": "## Remediation\n\nUpdate component `liblz4-1` from version `0.0~r131-2ubuntu3` to the `0.0~r131-2ubuntu3.1` or latest secure version to resolve security vulnerabilities.",
+                "text": "Update component liblz4-1 to resolve security issues"
+              },
+              "id": "vulnerable-component/liblz4_1",
+              "name": "Vulnerable Component: liblz4-1",
+              "properties": {
+                "precision": "high",
+                "tags": [
+                  "security",
+                  "vulnerability",
+                  "component"
+                ]
+              },
+              "shortDescription": {
+                "text": "Security vulnerabilities in component liblz4-1"
               }
             },
             {
@@ -1882,15 +2038,15 @@
                 "level": "warning"
               },
               "fullDescription": {
-                "markdown": "## Vulnerable Component: libseccomp2\n\nThis component has security vulnerabilities that require remediation.",
-                "text": "Component libseccomp2 has security vulnerabilities that require remediation"
+                "markdown": "## Vulnerable Component: tar\n\nThis component has security vulnerabilities that require remediation.",
+                "text": "Component tar has security vulnerabilities that require remediation"
               },
               "help": {
-                "markdown": "## Remediation\n\nUpdate component `libseccomp2` from version `2.3.1-2.1ubuntu4` to the `2.4.1-0ubuntu0.18.04.2` or latest secure version to resolve security vulnerabilities.",
-                "text": "Update component libseccomp2 to resolve security issues"
+                "markdown": "## Remediation\n\nUpdate component `tar` from version `1.29b-2ubuntu0.1` to the `1.29b-2ubuntu0.4` or latest secure version to resolve security vulnerabilities.",
+                "text": "Update component tar to resolve security issues"
               },
-              "id": "vulnerable-component/libseccomp2",
-              "name": "Vulnerable Component: libseccomp2",
+              "id": "vulnerable-component/tar",
+              "name": "Vulnerable Component: tar",
               "properties": {
                 "precision": "high",
                 "tags": [
@@ -1900,7 +2056,7 @@
                 ]
               },
               "shortDescription": {
-                "text": "Security vulnerabilities in component libseccomp2"
+                "text": "Security vulnerabilities in component tar"
               }
             },
             {
@@ -1908,15 +2064,15 @@
                 "level": "warning"
               },
               "fullDescription": {
-                "markdown": "## Vulnerable Component: e2fsprogs\n\nThis component has security vulnerabilities that require remediation.",
-                "text": "Component e2fsprogs has security vulnerabilities that require remediation"
+                "markdown": "## Vulnerable Component: login\n\nThis component has security vulnerabilities that require remediation.",
+                "text": "Component login has security vulnerabilities that require remediation"
               },
               "help": {
-                "markdown": "## Remediation\n\nUpdate component `e2fsprogs` from version `1.44.1-1ubuntu1.1` to the `1.44.1-1ubuntu1.4` or latest secure version to resolve security vulnerabilities.",
-                "text": "Update component e2fsprogs to resolve security issues"
+                "markdown": "## Remediation\n\nUpdate component `login` from version `1:4.5-1ubuntu1` to the `1:4.5-1ubuntu2.2` or latest secure version to resolve security vulnerabilities.",
+                "text": "Update component login to resolve security issues"
               },
-              "id": "vulnerable-component/e2fsprogs",
-              "name": "Vulnerable Component: e2fsprogs",
+              "id": "vulnerable-component/login",
+              "name": "Vulnerable Component: login",
               "properties": {
                 "precision": "high",
                 "tags": [
@@ -1926,7 +2082,7 @@
                 ]
               },
               "shortDescription": {
-                "text": "Security vulnerabilities in component e2fsprogs"
+                "text": "Security vulnerabilities in component login"
               }
             },
             {
@@ -1960,15 +2116,15 @@
                 "level": "warning"
               },
               "fullDescription": {
-                "markdown": "## Vulnerable Component: zlib1g\n\nThis component has security vulnerabilities that require remediation.",
-                "text": "Component zlib1g has security vulnerabilities that require remediation"
+                "markdown": "## Vulnerable Component: libpam-modules\n\nThis component has security vulnerabilities that require remediation.",
+                "text": "Component libpam-modules has security vulnerabilities that require remediation"
               },
               "help": {
-                "markdown": "## Remediation\n\nUpdate component `zlib1g` from version `1:1.2.11.dfsg-0ubuntu2` to the `1:1.2.11.dfsg-0ubuntu2.2` or latest secure version to resolve security vulnerabilities.",
-                "text": "Update component zlib1g to resolve security issues"
+                "markdown": "## Remediation\n\nUpdate component `libpam-modules` from version `1.1.8-3.6ubuntu2` to the `1.1.8-3.6ubuntu2.18.04.4` or latest secure version to resolve security vulnerabilities.",
+                "text": "Update component libpam-modules to resolve security issues"
               },
-              "id": "vulnerable-component/zlib1g",
-              "name": "Vulnerable Component: zlib1g",
+              "id": "vulnerable-component/libpam_modules",
+              "name": "Vulnerable Component: libpam-modules",
               "properties": {
                 "precision": "high",
                 "tags": [
@@ -1978,7 +2134,7 @@
                 ]
               },
               "shortDescription": {
-                "text": "Security vulnerabilities in component zlib1g"
+                "text": "Security vulnerabilities in component libpam-modules"
               }
             },
             {
@@ -1986,15 +2142,15 @@
                 "level": "warning"
               },
               "fullDescription": {
-                "markdown": "## Vulnerable Component: gpgv\n\nThis component has security vulnerabilities that require remediation.",
-                "text": "Component gpgv has security vulnerabilities that require remediation"
+                "markdown": "## Vulnerable Component: libhogweed4\n\nThis component has security vulnerabilities that require remediation.",
+                "text": "Component libhogweed4 has security vulnerabilities that require remediation"
               },
               "help": {
-                "markdown": "## Remediation\n\nUpdate component `gpgv` from version `2.2.4-1ubuntu1.2` to the `2.2.4-1ubuntu1.6` or latest secure version to resolve security vulnerabilities.",
-                "text": "Update component gpgv to resolve security issues"
+                "markdown": "## Remediation\n\nUpdate component `libhogweed4` from version `3.4-1` to the `3.4.1-0ubuntu0.18.04.1` or latest secure version to resolve security vulnerabilities.",
+                "text": "Update component libhogweed4 to resolve security issues"
               },
-              "id": "vulnerable-component/gpgv",
-              "name": "Vulnerable Component: gpgv",
+              "id": "vulnerable-component/libhogweed4",
+              "name": "Vulnerable Component: libhogweed4",
               "properties": {
                 "precision": "high",
                 "tags": [
@@ -2004,85 +2160,7 @@
                 ]
               },
               "shortDescription": {
-                "text": "Security vulnerabilities in component gpgv"
-              }
-            },
-            {
-              "defaultConfiguration": {
-                "level": "warning"
-              },
-              "fullDescription": {
-                "markdown": "## Vulnerable Component: libidn2-0\n\nThis component has security vulnerabilities that require remediation.",
-                "text": "Component libidn2-0 has security vulnerabilities that require remediation"
-              },
-              "help": {
-                "markdown": "## Remediation\n\nUpdate component `libidn2-0` from version `2.0.4-1.1build2` to the `2.0.4-1.1ubuntu0.2` or latest secure version to resolve security vulnerabilities.",
-                "text": "Update component libidn2-0 to resolve security issues"
-              },
-              "id": "vulnerable-component/libidn2_0",
-              "name": "Vulnerable Component: libidn2-0",
-              "properties": {
-                "precision": "high",
-                "tags": [
-                  "security",
-                  "vulnerability",
-                  "component"
-                ]
-              },
-              "shortDescription": {
-                "text": "Security vulnerabilities in component libidn2-0"
-              }
-            },
-            {
-              "defaultConfiguration": {
-                "level": "warning"
-              },
-              "fullDescription": {
-                "markdown": "## Vulnerable Component: gcc-8-base\n\nThis component has security vulnerabilities that require remediation.",
-                "text": "Component gcc-8-base has security vulnerabilities that require remediation"
-              },
-              "help": {
-                "markdown": "## Remediation\n\nUpdate component `gcc-8-base` from version `8.2.0-1ubuntu2~18.04` to the `8.3.0-26ubuntu1~18.04` or latest secure version to resolve security vulnerabilities.",
-                "text": "Update component gcc-8-base to resolve security issues"
-              },
-              "id": "vulnerable-component/gcc_8_base",
-              "name": "Vulnerable Component: gcc-8-base",
-              "properties": {
-                "precision": "high",
-                "tags": [
-                  "security",
-                  "vulnerability",
-                  "component"
-                ]
-              },
-              "shortDescription": {
-                "text": "Security vulnerabilities in component gcc-8-base"
-              }
-            },
-            {
-              "defaultConfiguration": {
-                "level": "warning"
-              },
-              "fullDescription": {
-                "markdown": "## Vulnerable Component: libsepol1\n\nThis component has security vulnerabilities that require remediation.",
-                "text": "Component libsepol1 has security vulnerabilities that require remediation"
-              },
-              "help": {
-                "markdown": "## Remediation\n\nUpdate component `libsepol1` from version `2.7-1` to the `2.7-1ubuntu0.1` or latest secure version to resolve security vulnerabilities.",
-                "text": "Update component libsepol1 to resolve security issues"
-              },
-              "id": "vulnerable-component/libsepol1",
-              "name": "Vulnerable Component: libsepol1",
-              "properties": {
-                "precision": "high",
-                "tags": [
-                  "security",
-                  "vulnerability",
-                  "component"
-                ]
-              },
-              "shortDescription": {
-                "text": "Security vulnerabilities in component libsepol1"
+                "text": "Security vulnerabilities in component libhogweed4"
               }
             },
             {
@@ -2116,15 +2194,15 @@
                 "level": "warning"
               },
               "fullDescription": {
-                "markdown": "## Vulnerable Component: dpkg\n\nThis component has security vulnerabilities that require remediation.",
-                "text": "Component dpkg has security vulnerabilities that require remediation"
+                "markdown": "## Vulnerable Component: libsqlite3-0\n\nThis component has security vulnerabilities that require remediation.",
+                "text": "Component libsqlite3-0 has security vulnerabilities that require remediation"
               },
               "help": {
-                "markdown": "## Remediation\n\nUpdate component `dpkg` from version `1.19.0.5ubuntu2.1` to the `1.19.0.5ubuntu2.4` or latest secure version to resolve security vulnerabilities.",
-                "text": "Update component dpkg to resolve security issues"
+                "markdown": "## Remediation\n\nUpdate component `libsqlite3-0` from version `3.22.0-1` to the `3.22.0-1ubuntu0.7` or latest secure version to resolve security vulnerabilities.",
+                "text": "Update component libsqlite3-0 to resolve security issues"
               },
-              "id": "vulnerable-component/dpkg",
-              "name": "Vulnerable Component: dpkg",
+              "id": "vulnerable-component/libsqlite3_0",
+              "name": "Vulnerable Component: libsqlite3-0",
               "properties": {
                 "precision": "high",
                 "tags": [
@@ -2134,189 +2212,7 @@
                 ]
               },
               "shortDescription": {
-                "text": "Security vulnerabilities in component dpkg"
-              }
-            },
-            {
-              "defaultConfiguration": {
-                "level": "warning"
-              },
-              "fullDescription": {
-                "markdown": "## Vulnerable Component: libldap-2.4-2\n\nThis component has security vulnerabilities that require remediation.",
-                "text": "Component libldap-2.4-2 has security vulnerabilities that require remediation"
-              },
-              "help": {
-                "markdown": "## Remediation\n\nUpdate component `libldap-2.4-2` from version `2.4.45+dfsg-1ubuntu1.1` to the `2.4.45+dfsg-1ubuntu1.11` or latest secure version to resolve security vulnerabilities.",
-                "text": "Update component libldap-2.4-2 to resolve security issues"
-              },
-              "id": "vulnerable-component/libldap_2_4_2",
-              "name": "Vulnerable Component: libldap-2.4-2",
-              "properties": {
-                "precision": "high",
-                "tags": [
-                  "security",
-                  "vulnerability",
-                  "component"
-                ]
-              },
-              "shortDescription": {
-                "text": "Security vulnerabilities in component libldap-2.4-2"
-              }
-            },
-            {
-              "defaultConfiguration": {
-                "level": "warning"
-              },
-              "fullDescription": {
-                "markdown": "## Vulnerable Component: libc-bin\n\nThis component has security vulnerabilities that require remediation.",
-                "text": "Component libc-bin has security vulnerabilities that require remediation"
-              },
-              "help": {
-                "markdown": "## Remediation\n\nUpdate component `libc-bin` from version `2.27-3ubuntu1` to the `2.27-3ubuntu1.5` or latest secure version to resolve security vulnerabilities.",
-                "text": "Update component libc-bin to resolve security issues"
-              },
-              "id": "vulnerable-component/libc_bin",
-              "name": "Vulnerable Component: libc-bin",
-              "properties": {
-                "precision": "high",
-                "tags": [
-                  "security",
-                  "vulnerability",
-                  "component"
-                ]
-              },
-              "shortDescription": {
-                "text": "Security vulnerabilities in component libc-bin"
-              }
-            },
-            {
-              "defaultConfiguration": {
-                "level": "warning"
-              },
-              "fullDescription": {
-                "markdown": "## Vulnerable Component: bsdutils\n\nThis component has security vulnerabilities that require remediation.",
-                "text": "Component bsdutils has security vulnerabilities that require remediation"
-              },
-              "help": {
-                "markdown": "## Remediation\n\nUpdate component `bsdutils` from version `1:2.31.1-0.4ubuntu3.3` to the `2.31.1-0.4ubuntu3.7` or latest secure version to resolve security vulnerabilities.",
-                "text": "Update component bsdutils to resolve security issues"
-              },
-              "id": "vulnerable-component/bsdutils",
-              "name": "Vulnerable Component: bsdutils",
-              "properties": {
-                "precision": "high",
-                "tags": [
-                  "security",
-                  "vulnerability",
-                  "component"
-                ]
-              },
-              "shortDescription": {
-                "text": "Security vulnerabilities in component bsdutils"
-              }
-            },
-            {
-              "defaultConfiguration": {
-                "level": "warning"
-              },
-              "fullDescription": {
-                "markdown": "## Vulnerable Component: libp11-kit0\n\nThis component has security vulnerabilities that require remediation.",
-                "text": "Component libp11-kit0 has security vulnerabilities that require remediation"
-              },
-              "help": {
-                "markdown": "## Remediation\n\nUpdate component `libp11-kit0` from version `0.23.9-2` to the `0.23.9-2ubuntu0.1` or latest secure version to resolve security vulnerabilities.",
-                "text": "Update component libp11-kit0 to resolve security issues"
-              },
-              "id": "vulnerable-component/libp11_kit0",
-              "name": "Vulnerable Component: libp11-kit0",
-              "properties": {
-                "precision": "high",
-                "tags": [
-                  "security",
-                  "vulnerability",
-                  "component"
-                ]
-              },
-              "shortDescription": {
-                "text": "Security vulnerabilities in component libp11-kit0"
-              }
-            },
-            {
-              "defaultConfiguration": {
-                "level": "warning"
-              },
-              "fullDescription": {
-                "markdown": "## Vulnerable Component: gzip\n\nThis component has security vulnerabilities that require remediation.",
-                "text": "Component gzip has security vulnerabilities that require remediation"
-              },
-              "help": {
-                "markdown": "## Remediation\n\nUpdate component `gzip` from version `1.6-5ubuntu1` to the `1.6-5ubuntu1.2` or latest secure version to resolve security vulnerabilities.",
-                "text": "Update component gzip to resolve security issues"
-              },
-              "id": "vulnerable-component/gzip",
-              "name": "Vulnerable Component: gzip",
-              "properties": {
-                "precision": "high",
-                "tags": [
-                  "security",
-                  "vulnerability",
-                  "component"
-                ]
-              },
-              "shortDescription": {
-                "text": "Security vulnerabilities in component gzip"
-              }
-            },
-            {
-              "defaultConfiguration": {
-                "level": "warning"
-              },
-              "fullDescription": {
-                "markdown": "## Vulnerable Component: libssl1.1\n\nThis component has security vulnerabilities that require remediation.",
-                "text": "Component libssl1.1 has security vulnerabilities that require remediation"
-              },
-              "help": {
-                "markdown": "## Remediation\n\nUpdate component `libssl1.1` from version `1.1.0g-2ubuntu4.3` to the `1.1.1-1ubuntu2.1~18.04.23` or latest secure version to resolve security vulnerabilities.",
-                "text": "Update component libssl1.1 to resolve security issues"
-              },
-              "id": "vulnerable-component/libssl1_1",
-              "name": "Vulnerable Component: libssl1.1",
-              "properties": {
-                "precision": "high",
-                "tags": [
-                  "security",
-                  "vulnerability",
-                  "component"
-                ]
-              },
-              "shortDescription": {
-                "text": "Security vulnerabilities in component libssl1.1"
-              }
-            },
-            {
-              "defaultConfiguration": {
-                "level": "warning"
-              },
-              "fullDescription": {
-                "markdown": "## Vulnerable Component: libpam-modules\n\nThis component has security vulnerabilities that require remediation.",
-                "text": "Component libpam-modules has security vulnerabilities that require remediation"
-              },
-              "help": {
-                "markdown": "## Remediation\n\nUpdate component `libpam-modules` from version `1.1.8-3.6ubuntu2` to the `1.1.8-3.6ubuntu2.18.04.4` or latest secure version to resolve security vulnerabilities.",
-                "text": "Update component libpam-modules to resolve security issues"
-              },
-              "id": "vulnerable-component/libpam_modules",
-              "name": "Vulnerable Component: libpam-modules",
-              "properties": {
-                "precision": "high",
-                "tags": [
-                  "security",
-                  "vulnerability",
-                  "component"
-                ]
-              },
-              "shortDescription": {
-                "text": "Security vulnerabilities in component libpam-modules"
+                "text": "Security vulnerabilities in component libsqlite3-0"
               }
             },
             {
@@ -2343,136 +2239,6 @@
               },
               "shortDescription": {
                 "text": "Security vulnerabilities in component libncurses5"
-              }
-            },
-            {
-              "defaultConfiguration": {
-                "level": "warning"
-              },
-              "fullDescription": {
-                "markdown": "## Vulnerable Component: libsystemd0\n\nThis component has security vulnerabilities that require remediation.",
-                "text": "Component libsystemd0 has security vulnerabilities that require remediation"
-              },
-              "help": {
-                "markdown": "## Remediation\n\nUpdate component `libsystemd0` from version `237-3ubuntu10.13` to the `237-3ubuntu10.57` or latest secure version to resolve security vulnerabilities.",
-                "text": "Update component libsystemd0 to resolve security issues"
-              },
-              "id": "vulnerable-component/libsystemd0",
-              "name": "Vulnerable Component: libsystemd0",
-              "properties": {
-                "precision": "high",
-                "tags": [
-                  "security",
-                  "vulnerability",
-                  "component"
-                ]
-              },
-              "shortDescription": {
-                "text": "Security vulnerabilities in component libsystemd0"
-              }
-            },
-            {
-              "defaultConfiguration": {
-                "level": "warning"
-              },
-              "fullDescription": {
-                "markdown": "## Vulnerable Component: curl\n\nThis component has security vulnerabilities that require remediation.",
-                "text": "Component curl has security vulnerabilities that require remediation"
-              },
-              "help": {
-                "markdown": "## Remediation\n\nUpdate component `curl` from version `7.58.0-2ubuntu3.6` to the `7.58.0-2ubuntu3.24` or latest secure version to resolve security vulnerabilities.",
-                "text": "Update component curl to resolve security issues"
-              },
-              "id": "vulnerable-component/curl",
-              "name": "Vulnerable Component: curl",
-              "properties": {
-                "precision": "high",
-                "tags": [
-                  "security",
-                  "vulnerability",
-                  "component"
-                ]
-              },
-              "shortDescription": {
-                "text": "Security vulnerabilities in component curl"
-              }
-            },
-            {
-              "defaultConfiguration": {
-                "level": "warning"
-              },
-              "fullDescription": {
-                "markdown": "## Vulnerable Component: libgcrypt20\n\nThis component has security vulnerabilities that require remediation.",
-                "text": "Component libgcrypt20 has security vulnerabilities that require remediation"
-              },
-              "help": {
-                "markdown": "## Remediation\n\nUpdate component `libgcrypt20` from version `1.8.1-4ubuntu1.1` to the `1.8.1-4ubuntu1.3` or latest secure version to resolve security vulnerabilities.",
-                "text": "Update component libgcrypt20 to resolve security issues"
-              },
-              "id": "vulnerable-component/libgcrypt20",
-              "name": "Vulnerable Component: libgcrypt20",
-              "properties": {
-                "precision": "high",
-                "tags": [
-                  "security",
-                  "vulnerability",
-                  "component"
-                ]
-              },
-              "shortDescription": {
-                "text": "Security vulnerabilities in component libgcrypt20"
-              }
-            },
-            {
-              "defaultConfiguration": {
-                "level": "warning"
-              },
-              "fullDescription": {
-                "markdown": "## Vulnerable Component: tar\n\nThis component has security vulnerabilities that require remediation.",
-                "text": "Component tar has security vulnerabilities that require remediation"
-              },
-              "help": {
-                "markdown": "## Remediation\n\nUpdate component `tar` from version `1.29b-2ubuntu0.1` to the `1.29b-2ubuntu0.4` or latest secure version to resolve security vulnerabilities.",
-                "text": "Update component tar to resolve security issues"
-              },
-              "id": "vulnerable-component/tar",
-              "name": "Vulnerable Component: tar",
-              "properties": {
-                "precision": "high",
-                "tags": [
-                  "security",
-                  "vulnerability",
-                  "component"
-                ]
-              },
-              "shortDescription": {
-                "text": "Security vulnerabilities in component tar"
-              }
-            },
-            {
-              "defaultConfiguration": {
-                "level": "error"
-              },
-              "fullDescription": {
-                "markdown": "## Vulnerable Component: org.apache.logging.log4j:log4j-core\n\nThis component has security vulnerabilities that require remediation.",
-                "text": "Component org.apache.logging.log4j:log4j-core has security vulnerabilities that require remediation"
-              },
-              "help": {
-                "markdown": "## Remediation\n\nUpdate component `org.apache.logging.log4j:log4j-core` from version `2.14.1` to the `2.17.1` or latest secure version to resolve security vulnerabilities.",
-                "text": "Update component org.apache.logging.log4j:log4j-core to resolve security issues"
-              },
-              "id": "vulnerable-component/org_apache_logging_log4j_log4j_core",
-              "name": "Vulnerable Component: org.apache.logging.log4j:log4j-core",
-              "properties": {
-                "precision": "high",
-                "tags": [
-                  "security",
-                  "vulnerability",
-                  "component"
-                ]
-              },
-              "shortDescription": {
-                "text": "Security vulnerabilities in component org.apache.logging.log4j:log4j-core"
               }
             },
             {
@@ -2532,15 +2298,15 @@
                 "level": "warning"
               },
               "fullDescription": {
-                "markdown": "## Vulnerable Component: bzip2\n\nThis component has security vulnerabilities that require remediation.",
-                "text": "Component bzip2 has security vulnerabilities that require remediation"
+                "markdown": "## Vulnerable Component: libpcre3\n\nThis component has security vulnerabilities that require remediation.",
+                "text": "Component libpcre3 has security vulnerabilities that require remediation"
               },
               "help": {
-                "markdown": "## Remediation\n\nUpdate component `bzip2` from version `1.0.6-8.1` to the `1.0.6-8.1ubuntu0.2` or latest secure version to resolve security vulnerabilities.",
-                "text": "Update component bzip2 to resolve security issues"
+                "markdown": "## Remediation\n\nUpdate component `libpcre3` from version `2:8.39-9` to the `2:8.39-9ubuntu0.1` or latest secure version to resolve security vulnerabilities.",
+                "text": "Update component libpcre3 to resolve security issues"
               },
-              "id": "vulnerable-component/bzip2",
-              "name": "Vulnerable Component: bzip2",
+              "id": "vulnerable-component/libpcre3",
+              "name": "Vulnerable Component: libpcre3",
               "properties": {
                 "precision": "high",
                 "tags": [
@@ -2550,7 +2316,85 @@
                 ]
               },
               "shortDescription": {
-                "text": "Security vulnerabilities in component bzip2"
+                "text": "Security vulnerabilities in component libpcre3"
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "level": "warning"
+              },
+              "fullDescription": {
+                "markdown": "## Vulnerable Component: libsystemd0\n\nThis component has security vulnerabilities that require remediation.",
+                "text": "Component libsystemd0 has security vulnerabilities that require remediation"
+              },
+              "help": {
+                "markdown": "## Remediation\n\nUpdate component `libsystemd0` from version `237-3ubuntu10.13` to the `237-3ubuntu10.57` or latest secure version to resolve security vulnerabilities.",
+                "text": "Update component libsystemd0 to resolve security issues"
+              },
+              "id": "vulnerable-component/libsystemd0",
+              "name": "Vulnerable Component: libsystemd0",
+              "properties": {
+                "precision": "high",
+                "tags": [
+                  "security",
+                  "vulnerability",
+                  "component"
+                ]
+              },
+              "shortDescription": {
+                "text": "Security vulnerabilities in component libsystemd0"
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "level": "warning"
+              },
+              "fullDescription": {
+                "markdown": "## Vulnerable Component: dpkg\n\nThis component has security vulnerabilities that require remediation.",
+                "text": "Component dpkg has security vulnerabilities that require remediation"
+              },
+              "help": {
+                "markdown": "## Remediation\n\nUpdate component `dpkg` from version `1.19.0.5ubuntu2.1` to the `1.19.0.5ubuntu2.4` or latest secure version to resolve security vulnerabilities.",
+                "text": "Update component dpkg to resolve security issues"
+              },
+              "id": "vulnerable-component/dpkg",
+              "name": "Vulnerable Component: dpkg",
+              "properties": {
+                "precision": "high",
+                "tags": [
+                  "security",
+                  "vulnerability",
+                  "component"
+                ]
+              },
+              "shortDescription": {
+                "text": "Security vulnerabilities in component dpkg"
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "level": "warning"
+              },
+              "fullDescription": {
+                "markdown": "## Vulnerable Component: gcc-8-base\n\nThis component has security vulnerabilities that require remediation.",
+                "text": "Component gcc-8-base has security vulnerabilities that require remediation"
+              },
+              "help": {
+                "markdown": "## Remediation\n\nUpdate component `gcc-8-base` from version `8.2.0-1ubuntu2~18.04` to the `8.3.0-26ubuntu1~18.04` or latest secure version to resolve security vulnerabilities.",
+                "text": "Update component gcc-8-base to resolve security issues"
+              },
+              "id": "vulnerable-component/gcc_8_base",
+              "name": "Vulnerable Component: gcc-8-base",
+              "properties": {
+                "precision": "high",
+                "tags": [
+                  "security",
+                  "vulnerability",
+                  "component"
+                ]
+              },
+              "shortDescription": {
+                "text": "Security vulnerabilities in component gcc-8-base"
               }
             },
             {
@@ -2584,15 +2428,15 @@
                 "level": "warning"
               },
               "fullDescription": {
-                "markdown": "## Vulnerable Component: libasn1-8-heimdal\n\nThis component has security vulnerabilities that require remediation.",
-                "text": "Component libasn1-8-heimdal has security vulnerabilities that require remediation"
+                "markdown": "## Vulnerable Component: libssl1.1\n\nThis component has security vulnerabilities that require remediation.",
+                "text": "Component libssl1.1 has security vulnerabilities that require remediation"
               },
               "help": {
-                "markdown": "## Remediation\n\nUpdate component `libasn1-8-heimdal` from version `7.5.0+dfsg-1` to the `7.5.0+dfsg-1ubuntu0.1` or latest secure version to resolve security vulnerabilities.",
-                "text": "Update component libasn1-8-heimdal to resolve security issues"
+                "markdown": "## Remediation\n\nUpdate component `libssl1.1` from version `1.1.0g-2ubuntu4.3` to the `1.1.1-1ubuntu2.1~18.04.23` or latest secure version to resolve security vulnerabilities.",
+                "text": "Update component libssl1.1 to resolve security issues"
               },
-              "id": "vulnerable-component/libasn1_8_heimdal",
-              "name": "Vulnerable Component: libasn1-8-heimdal",
+              "id": "vulnerable-component/libssl1_1",
+              "name": "Vulnerable Component: libssl1.1",
               "properties": {
                 "precision": "high",
                 "tags": [
@@ -2602,7 +2446,7 @@
                 ]
               },
               "shortDescription": {
-                "text": "Security vulnerabilities in component libasn1-8-heimdal"
+                "text": "Security vulnerabilities in component libssl1.1"
               }
             },
             {
@@ -2610,15 +2454,15 @@
                 "level": "warning"
               },
               "fullDescription": {
-                "markdown": "## Vulnerable Component: libsqlite3-0\n\nThis component has security vulnerabilities that require remediation.",
-                "text": "Component libsqlite3-0 has security vulnerabilities that require remediation"
+                "markdown": "## Vulnerable Component: libsasl2-2\n\nThis component has security vulnerabilities that require remediation.",
+                "text": "Component libsasl2-2 has security vulnerabilities that require remediation"
               },
               "help": {
-                "markdown": "## Remediation\n\nUpdate component `libsqlite3-0` from version `3.22.0-1` to the `3.22.0-1ubuntu0.7` or latest secure version to resolve security vulnerabilities.",
-                "text": "Update component libsqlite3-0 to resolve security issues"
+                "markdown": "## Remediation\n\nUpdate component `libsasl2-2` from version `2.1.27~101-g0780600+dfsg-3ubuntu2` to the `2.1.27~101-g0780600+dfsg-3ubuntu2.4` or latest secure version to resolve security vulnerabilities.",
+                "text": "Update component libsasl2-2 to resolve security issues"
               },
-              "id": "vulnerable-component/libsqlite3_0",
-              "name": "Vulnerable Component: libsqlite3-0",
+              "id": "vulnerable-component/libsasl2_2",
+              "name": "Vulnerable Component: libsasl2-2",
               "properties": {
                 "precision": "high",
                 "tags": [
@@ -2628,7 +2472,163 @@
                 ]
               },
               "shortDescription": {
-                "text": "Security vulnerabilities in component libsqlite3-0"
+                "text": "Security vulnerabilities in component libsasl2-2"
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "level": "warning"
+              },
+              "fullDescription": {
+                "markdown": "## Vulnerable Component: gpgv\n\nThis component has security vulnerabilities that require remediation.",
+                "text": "Component gpgv has security vulnerabilities that require remediation"
+              },
+              "help": {
+                "markdown": "## Remediation\n\nUpdate component `gpgv` from version `2.2.4-1ubuntu1.2` to the `2.2.4-1ubuntu1.6` or latest secure version to resolve security vulnerabilities.",
+                "text": "Update component gpgv to resolve security issues"
+              },
+              "id": "vulnerable-component/gpgv",
+              "name": "Vulnerable Component: gpgv",
+              "properties": {
+                "precision": "high",
+                "tags": [
+                  "security",
+                  "vulnerability",
+                  "component"
+                ]
+              },
+              "shortDescription": {
+                "text": "Security vulnerabilities in component gpgv"
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "level": "warning"
+              },
+              "fullDescription": {
+                "markdown": "## Vulnerable Component: bzip2\n\nThis component has security vulnerabilities that require remediation.",
+                "text": "Component bzip2 has security vulnerabilities that require remediation"
+              },
+              "help": {
+                "markdown": "## Remediation\n\nUpdate component `bzip2` from version `1.0.6-8.1` to the `1.0.6-8.1ubuntu0.2` or latest secure version to resolve security vulnerabilities.",
+                "text": "Update component bzip2 to resolve security issues"
+              },
+              "id": "vulnerable-component/bzip2",
+              "name": "Vulnerable Component: bzip2",
+              "properties": {
+                "precision": "high",
+                "tags": [
+                  "security",
+                  "vulnerability",
+                  "component"
+                ]
+              },
+              "shortDescription": {
+                "text": "Security vulnerabilities in component bzip2"
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "level": "warning"
+              },
+              "fullDescription": {
+                "markdown": "## Vulnerable Component: bsdutils\n\nThis component has security vulnerabilities that require remediation.",
+                "text": "Component bsdutils has security vulnerabilities that require remediation"
+              },
+              "help": {
+                "markdown": "## Remediation\n\nUpdate component `bsdutils` from version `1:2.31.1-0.4ubuntu3.3` to the `2.31.1-0.4ubuntu3.7` or latest secure version to resolve security vulnerabilities.",
+                "text": "Update component bsdutils to resolve security issues"
+              },
+              "id": "vulnerable-component/bsdutils",
+              "name": "Vulnerable Component: bsdutils",
+              "properties": {
+                "precision": "high",
+                "tags": [
+                  "security",
+                  "vulnerability",
+                  "component"
+                ]
+              },
+              "shortDescription": {
+                "text": "Security vulnerabilities in component bsdutils"
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "level": "warning"
+              },
+              "fullDescription": {
+                "markdown": "## Vulnerable Component: libc-bin\n\nThis component has security vulnerabilities that require remediation.",
+                "text": "Component libc-bin has security vulnerabilities that require remediation"
+              },
+              "help": {
+                "markdown": "## Remediation\n\nUpdate component `libc-bin` from version `2.27-3ubuntu1` to the `2.27-3ubuntu1.5` or latest secure version to resolve security vulnerabilities.",
+                "text": "Update component libc-bin to resolve security issues"
+              },
+              "id": "vulnerable-component/libc_bin",
+              "name": "Vulnerable Component: libc-bin",
+              "properties": {
+                "precision": "high",
+                "tags": [
+                  "security",
+                  "vulnerability",
+                  "component"
+                ]
+              },
+              "shortDescription": {
+                "text": "Security vulnerabilities in component libc-bin"
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "level": "warning"
+              },
+              "fullDescription": {
+                "markdown": "## Vulnerable Component: libp11-kit0\n\nThis component has security vulnerabilities that require remediation.",
+                "text": "Component libp11-kit0 has security vulnerabilities that require remediation"
+              },
+              "help": {
+                "markdown": "## Remediation\n\nUpdate component `libp11-kit0` from version `0.23.9-2` to the `0.23.9-2ubuntu0.1` or latest secure version to resolve security vulnerabilities.",
+                "text": "Update component libp11-kit0 to resolve security issues"
+              },
+              "id": "vulnerable-component/libp11_kit0",
+              "name": "Vulnerable Component: libp11-kit0",
+              "properties": {
+                "precision": "high",
+                "tags": [
+                  "security",
+                  "vulnerability",
+                  "component"
+                ]
+              },
+              "shortDescription": {
+                "text": "Security vulnerabilities in component libp11-kit0"
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "level": "warning"
+              },
+              "fullDescription": {
+                "markdown": "## Vulnerable Component: libidn2-0\n\nThis component has security vulnerabilities that require remediation.",
+                "text": "Component libidn2-0 has security vulnerabilities that require remediation"
+              },
+              "help": {
+                "markdown": "## Remediation\n\nUpdate component `libidn2-0` from version `2.0.4-1.1build2` to the `2.0.4-1.1ubuntu0.2` or latest secure version to resolve security vulnerabilities.",
+                "text": "Update component libidn2-0 to resolve security issues"
+              },
+              "id": "vulnerable-component/libidn2_0",
+              "name": "Vulnerable Component: libidn2-0",
+              "properties": {
+                "precision": "high",
+                "tags": [
+                  "security",
+                  "vulnerability",
+                  "component"
+                ]
+              },
+              "shortDescription": {
+                "text": "Security vulnerabilities in component libidn2-0"
               }
             }
           ],
