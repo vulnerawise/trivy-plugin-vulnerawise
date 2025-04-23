@@ -83,13 +83,12 @@ kube_cmd() {
 # --- Kubernetes Mode ---
 if [ "$TYPE" = "kube" ]; then
   CMD=$(kube_cmd)
-  images=$($CMD get "$RESOURCE_TYPE" "$RESOURCE_NAME" $KUBECTL_ARGS -o yaml | \
-           awk '/^[[:space:]]*image:/ {print $2}' | sort -u)
+  images=$($CMD get "$RESOURCE_TYPE" "$RESOURCE_NAME" $KUBECTL_ARGS -o jsonpath='{.spec.template.spec.containers[*].image} {.spec.template.spec.initContainers[*].image} {.spec.template.spec.ephemeralContainers[*].image}' | tr ' ' '\n' | sort -u)
   if [ -z "$images" ]; then
     echo "No images found in $RESOURCE_TYPE/$RESOURCE_NAME"
     exit 1
   fi
-  echo "$images" | while read -r image; do
+  echo "$images" | while IFS= read -r image; do
     if [ -n "$image" ]; then
       trivy image $TRIVY_ARGS "$image" --format json | run_audit
     fi
