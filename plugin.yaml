@@ -1,5 +1,5 @@
 name: "vulnerawise"
-version: "0.1.0"
+version: "0.0.1"
 repository: github.com/vulnerawise/trivy-plugin-vulnerawise
 maintainer: yourname
 summary: Scan images and repositories, then send results to Vulnerawise API
@@ -10,15 +10,15 @@ platforms:
   - selector:
       os: linux
       arch: amd64
-    uri: https://github.com/vulnerawise/trivy-plugin-vulnerawise/releases/download/v1.0.0/trivy-vulnerawise.tar.gz 
+    uri: https://github.com/vulnerawise/trivy-plugin-vulnerawise/releases/download/v0.0.1/trivy-vulnerawise.tar.gz 
     bin: ./trivy-vulnerawise
   - selector:
       os: darwin
       arch: amd64
-    uri: https://github.com/vulnerawise/trivy-plugin-vulnerawise/releases/download/v1.0.0/trivy-vulnerawise.tar.gz 
+    uri: https://github.com/vulnerawise/trivy-plugin-vulnerawise/releases/download/v0.0.1/trivy-vulnerawise.tar.gz 
     bin: ./trivy-vulnerawise
   - selector:
       os: darwin
       arch: arm64
-    uri: https://github.com/vulnerawise/trivy-plugin-vulnerawise/releases/download/v1.0.0/trivy-vulnerawise.tar.gz 
+    uri: https://github.com/vulnerawise/trivy-plugin-vulnerawise/releases/download/v0.0.1/trivy-vulnerawise.tar.gz 
     bin: ./trivy-vulnerawise
