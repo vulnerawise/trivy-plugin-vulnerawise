@@ -1,21 +1,20 @@
 #!/bin/sh
 # trivy-vulnerawise – Portable across Linux and macOS
 # This script invokes Trivy to scan (repo/image/sbom or Kubernetes resources via kubectl/oc),
-# then pipes the JSON output to "vulnerawise audit". If the optional flag --cve-view is provided,
-# it is passed to vulnerawise audit.
+# then pipes the JSON output to "vulnerawise check --scan-results -".
 
 set -e
 
 usage() {
   cat << 'EOS' >&2
 Usage:
-  trivy vulnerawise repo|image|sbom <target> [trivy options] [--cve-view]
-  trivy vulnerawise kube <resource_type> <resource_name> [kubectl/oc options] [trivy options] [--cve-view]
+  trivy vulnerawise repo|image|sbom <target> [trivy options]
+  trivy vulnerawise kube <resource_type> <resource_name> [kubectl/oc options] [trivy options]
 
 Examples:
   trivy vulnerawise image nginx:latest
   trivy vulnerawise repo github.com/ralvares/santa
-  trivy vulnerawise kube deployment visa-processor -n payments --severity HIGH --cve-view
+  trivy vulnerawise kube deployment visa-processor -n payments --severity HIGH
 EOS
   exit 1
 }
@@ -28,7 +27,6 @@ else
 fi
 
 # Initialize variables.
-CVE_VIEW_FLAG=""
 TRIVY_ARGS=""
 KUBECTL_ARGS=""
 
@@ -40,20 +38,13 @@ if [ "$1" = "kube" ]; then
   shift 3
   # Parse remaining arguments:
   # - Flags -n/--namespace go to KUBECTL_ARGS.
-  # - --cve-view is intercepted.
-  # - Everything else goes to TRIVY_ARGS.
+  # Everything else goes to TRIVY_ARGS.
   while [ $# -gt 0 ]; do
     case "$1" in
-      --cve-view)
-        CVE_VIEW_FLAG="--cve-view"
-        ;;
       -n|--namespace)
         KUBECTL_ARGS="$KUBECTL_ARGS $1"
         shift
         KUBECTL_ARGS="$KUBECTL_ARGS $1"
-        ;;
-      -*)
-        TRIVY_ARGS="$TRIVY_ARGS $1"
         ;;
       *)
         TRIVY_ARGS="$TRIVY_ARGS $1"
@@ -67,25 +58,14 @@ else
   TARGET=$2
   shift 2
   while [ $# -gt 0 ]; do
-    case "$1" in
-      --cve-view)
-        CVE_VIEW_FLAG="--cve-view"
-        ;;
-      *)
-        TRIVY_ARGS="$TRIVY_ARGS $1"
-        ;;
-    esac
+    TRIVY_ARGS="$TRIVY_ARGS $1"
     shift
   done
 fi
 
-# Helper: run vulnerawise audit with or without --cve-view.
+# Helper: run vulnerawise check with scan results from stdin.
 run_audit() {
-  if [ -n "$CVE_VIEW_FLAG" ]; then
-    vulnerawise audit "$CVE_VIEW_FLAG" -
-  else
-    vulnerawise audit -
-  fi
+  vulnerawise check --scan-results -
 }
 
 # Helper: choose kubectl or oc.
